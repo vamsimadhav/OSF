@@ -1,0 +1,21 @@
+slackbot-support-tool/
+│
+├── app/
+│   ├── __init__.py         # Flask app initialization
+│   ├── slack_events.py     # Event handling for Slack events (e.g., messages, reactions)
+│   ├── commands.py         # Logic for handling different bot commands like "flip a coin" or "san 3p"
+│   ├── blocks.py           # Contains Slack message block definitions (MESSAGE_BLOCK, CODE_BLOCK)
+│   ├── routes.py           # API routes if you need to expose HTTP APIs for admin tasks
+│   ├── utils.py            # Utility functions, helpers
+│
+├── config/
+│   ├── __init__.py         # Config initialization
+│   ├── settings.py         # Configuration management (e.g., environment variables)
+│
+├── tests/                  # Unit tests for your application
+│   ├── test_commands.py    # Test cases for different bot commands
+│
+├── .env                    # Environment variables (SLACKBOT_TOKEN, SLACK_EVENTS_TOKEN, etc.)
+├── requirements.txt        # Python dependencies
+├── README.md               # Documentation for the project
+├── run.py                  # Entry point to run the Flask app

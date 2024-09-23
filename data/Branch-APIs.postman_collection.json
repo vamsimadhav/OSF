@@ -1,0 +1,2222 @@
+{
+	"info": {
+		"_postman_id": "5176d201-087c-4c73-8c58-8ec2ab6b8939",
+		"name": "Branch-APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Links",
+			"item": [
+				{
+					"name": "Request",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://3gxt3ozta8.execute-api.us-east-1.amazonaws.com/dev",
+							"protocol": "https",
+							"host": [
+								"3gxt3ozta8",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Amplitude",
+			"item": [
+				{
+					"name": "Amplitude Batch Upload",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"api_key\": \"a899d56a3c53b790d9b3367863c0c1c1\",\n\"events\": [{\n\t\"device_id\": \"623b8192-90ea-daae-4ce8-138cca70a6a4\",\n\t\"event_type\": \"VIEW_ITEM\",\n\t\"time\": 1564602324436,\n\t\"user_properties\": {\n\t\t\"name\": \"\",\n\t\t\"source\": \"\",\n\t\t\"medium\": \"\",\n\t\t\"content\": \"\",\n\t\t\"tags\": \"\"\n\t},\n\t\"groups\": {},\n\t\"app_version\": \"5.12.1\",\n\t\"platform\": \"ANDROID\",\n\t\"os_name\": \"ANDROID\",\n\t\"os_version\": \"26\",\n\t\"device_brand\": \"Google\",\n\t\"device_model\": \"Pixel\",\n\t\"country\": \"US\",\n\t\"language\": \"EN\",\n\t\"ip\": \"13.56.159.23\",\n\t\"idfa\": \"\",\n\t\"idfv\": \"\",\n\t\"adid\": \"623b8192-90ea-daae-4ce8-138cca70a6a4\",\n\t\"android_id\": \"\",\n\t\"insert_id\": \"685198689186692038\"\n}, {\n\t\"device_id\": \"7c9e9349-6cd1-2641-297e-bcfd23cf5483\",\n\t\"event_type\": \"VIEW_ITEM\",\n\t\"time\": 1564602324667,\n\t\"user_properties\": {\n\t\t\"name\": \"\",\n\t\t\"source\": \"\",\n\t\t\"medium\": \"\",\n\t\t\"content\": \"\",\n\t\t\"tags\": \"\"\n\t},\n\t\"groups\": {},\n\t\"app_version\": \"5.12.1\",\n\t\"platform\": \"ANDROID\",\n\t\"os_name\": \"ANDROID\",\n\t\"os_version\": \"26\",\n\t\"device_brand\": \"Google\",\n\t\"device_model\": \"Pixel\",\n\t\"country\": \"US\",\n\t\"language\": \"EN\",\n\t\"ip\": \"13.56.159.23\",\n\t\"idfa\": \"\",\n\t\"idfv\": \"\",\n\t\"adid\": \"7c9e9349-6cd1-2641-297e-bcfd23cf5483\",\n\t\"android_id\": \"\",\n\t\"insert_id\": \"685198690088624157\"\n}, {\n\t\"device_id\": \"9132f60f-9e63-496c-7cb0-18ac31bfe0c2\",\n\t\"event_type\": \"VIEW_ITEM\",\n\t\"time\": 1564602324862,\n\t\"user_properties\": {\n\t\t\"name\": \"\",\n\t\t\"source\": \"\",\n\t\t\"medium\": \"\",\n\t\t\"content\": \"\",\n\t\t\"tags\": \"\"\n\t},\n\t\"groups\": {},\n\t\"app_version\": \"5.12.1\",\n\t\"platform\": \"ANDROID\",\n\t\"os_name\": \"ANDROID\",\n\t\"os_version\": \"26\",\n\t\"device_brand\": \"Google\",\n\t\"device_model\": \"Pixel\",\n\t\"country\": \"US\",\n\t\"language\": \"EN\",\n\t\"ip\": \"13.56.159.23\",\n\t\"idfa\": \"\",\n\t\"idfv\": \"\",\n\t\"adid\": \"9132f60f-9e63-496c-7cb0-18ac31bfe0c2\",\n\t\"android_id\": \"\",\n\t\"insert_id\": \"685198690901874973\"\n}]\n}"
+						},
+						"url": {
+							"raw": "https://api.amplitude.com/batch",
+							"protocol": "https",
+							"host": [
+								"api",
+								"amplitude",
+								"com"
+							],
+							"path": [
+								"batch"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apple API",
+			"item": [
+				{
+					"name": "Request",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://uclient-api.itunes.apple.com/WebObjects/MZStorePlatform.woa/wa/lookup?version=2&id=361309726&p=mdm-lockup&caller=MDM&cc=us&l=en",
+							"protocol": "https",
+							"host": [
+								"uclient-api",
+								"itunes",
+								"apple",
+								"com"
+							],
+							"path": [
+								"WebObjects",
+								"MZStorePlatform.woa",
+								"wa",
+								"lookup"
+							],
+							"query": [
+								{
+									"key": "version",
+									"value": "2"
+								},
+								{
+									"key": "id",
+									"value": "361309726"
+								},
+								{
+									"key": "p",
+									"value": "mdm-lockup"
+								},
+								{
+									"key": "caller",
+									"value": "MDM"
+								},
+								{
+									"key": "cc",
+									"value": "us"
+								},
+								{
+									"key": "l",
+									"value": "en"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Branch API",
+			"item": [
+				{
+					"name": "Journeys",
+					"item": [
+						{
+							"name": "Check Redirection",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "user-agent",
+										"value": "Mozilla/5.0 (Linux; U; Android 8.1.0; Redmi 6A Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.99 Mobile Safari/537.36 OPR/38.0.2254.134507"
+									}
+								],
+								"url": {
+									"raw": "https://tokopedia-alternate.app.link/vluk03jHMS",
+									"protocol": "https",
+									"host": [
+										"tokopedia-alternate",
+										"app",
+										"link"
+									],
+									"path": [
+										"vluk03jHMS"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Events",
+					"item": [
+						{
+							"name": "Request",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "Token atTaB0dAxIz6HSX2TTgIpTDiCujy8flHQWz0Gr61Ro1SFbtTgNxFlXYiA-G_NJfZ"
+									},
+									{
+										"key": "host",
+										"value": "mparticle.branch.io"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									},
+									{
+										"key": "x-branch-fraud-str",
+										"value": "isp=Highland Communications&transport=unknown"
+									},
+									{
+										"key": "x-forwarded-for",
+										"value": "138.43.143.22"
+									},
+									{
+										"key": "user-agent",
+										"value": "mParticle Firehose/1.0.0"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"type\": \"event_processing_request\",\n  \"id\": \"0361e135-baf8-4df4-98f8-089e624f7b96\",\n  \"timestamp_ms\": 1589113545316,\n  \"source_id\": \"72383c59-0bf1-403d-bd1b-0f268e992859\",\n  \"account\": {\n    \"account_id\": 40920,\n    \"account_settings\": {\n      \"branchKey\": \"key_live_clvNTn0ILAmUSJwrqVDu3gebCriiIeNe\",\n      \"branchSecret\": \"secret_live_TZpSWDgXmtmxh0PO9v4BmjcquTv55Y5T\",\n      \"enableAppleSearchAds\": \"False\",\n      \"forwardScreenViews\": \"False\"\n    }\n  },\n  \"user_identities\": [],\n  \"user_attributes\": {\n    \"Adobe Upstream ID\": \"UkVGSURfNjcwNTM0MTE=\",\n    \"User Allowed Brands\": \"nbcentertainment, bravo, cnbc, oxygen, e, syfy, sprout, usa, msnbc, nbcnews\",\n    \"User Converted\": \"None\",\n    \"User Email Status\": \"None\",\n    \"User Episode Credits Left\": \"None\",\n    \"User First Visit Date\": \"2019-11-15T22:47:57Z\",\n    \"User Language\": \"English\",\n    \"User MVPD\": \"DTV\",\n    \"User MVPD Referrer\": \"None\",\n    \"User Not Allowed Brands\": \"telemundo\",\n    \"User Platform\": \"Roku\",\n    \"User Product\": \"NBC App\",\n    \"User Profile\": \"Unauthenticated\",\n    \"User Registration Date\": \"None\",\n    \"User Registration Referrer\": \"None\",\n    \"User Registration Source\": \"None\",\n    \"User Show Favorited\": \"None\",\n    \"User Sign in Type\": \"OTT Device\",\n    \"User VPPA Opt In\": \"None\",\n    \"User VPPA Opt In Date\": \"None\",\n    \"User VPPA Opt In Platform\": \"None\",\n    \"User VPPA Opt In Product\": \"None\",\n    \"email\": \"None\",\n    \"Last Recommendation\": \"The Biggest Loser\",\n    \"Last Recommendation Video ID\": \"4087333\",\n    \"User Ad End Count\": \"1336\",\n    \"User Last Visit Date\": \"2020-05-10T11:54:41.9960000Z\",\n    \"User Video Preview Count\": \"301\"\n  },\n  \"user_attribute_lists\": {\n    \"Genre\": [\n      \"Reality and Game Show\",\n      \"None\",\n      \"Talk, Interview, Politics, News, Public affairs\",\n      \"News\",\n      \"Reality\",\n      \"Talk, News\",\n      \"News, Politics\",\n      \"Game show\",\n      \"Drama\",\n      \"Comedy\",\n      \"Public affairs\",\n      \"Action and Adventure\",\n      \"Consumer\",\n      \"Action, Comedy\",\n      \"Talk\",\n      \"Educational\",\n      \"Talk, Newsmagazine, News, Politics, Public affairs\",\n      \"Hockey\",\n      \"Sitcom, Gay\\\\/lesbian\",\n      \"Reality, Self improvement\",\n      \"Soap\",\n      \"Classic Sport Event, Golf\",\n      \"Hockey, Special\",\n      \"News, Entertainment\",\n      \"Community, Special\",\n      \"Sitcom\",\n      \"Classic Sport Event, Hockey\",\n      \"Musical, Drama, Religious, Special\",\n      \"Crime drama, Action, Thriller\",\n      \"Comedy, Variety, Music, Dance\"\n    ],\n    \"User Platform List\": [\n      \"Roku\"\n    ],\n    \"User Product List\": [\n      \"NBC App\"\n    ]\n  },\n  \"runtime_environment\": {\n    \"type\": \"roku\",\n    \"build_id\": \"28e35dcbafe3136b0954666dab28e0ac\",\n    \"brand\": \"Hisense\",\n    \"product\": \"7000X\",\n    \"name\": \"65R6+\",\n    \"manufacturer\": \"Hisense\",\n    \"os_version\": \"9.20\",\n    \"model\": \"7000X\",\n    \"screen_height\": 1080,\n    \"screen_width\": 1920,\n    \"country\": \"US\",\n    \"locale_language\": \"en_US\",\n    \"locale_country\": \"US\",\n    \"timezone_offset\": -4,\n    \"application_name\": \"NBC\",\n    \"application_version\": \"7.9.0\",\n    \"application_package\": \"68669\",\n    \"is_debug\": false,\n    \"client_ip_address\": \"138.43.143.22\",\n    \"identities\": [\n      {\n        \"type\": \"roku_advertising_id\",\n        \"encoding\": \"raw\",\n        \"value\": \"441134a1-89ff-59cc-b63c-c9ac742a2833\"\n      }\n    ],\n    \"sdk_version\": \"2.1.1\"\n  },\n  \"events\": [\n    {\n      \"type\": \"custom_event\",\n      \"id\": \"dcb6d5c7-c1c1-46d6-bf1b-4332d2fd1bc0\",\n      \"timestamp_ms\": 1589113529760,\n      \"source_id\": \"2da42d86-a7d7-43c5-9ef2-ebe2050276d9\",\n      \"session_id\": -5408070912439181601,\n      \"name\": \"Ad Pod Start\",\n      \"custom_event_type\": \"user_content\",\n      \"attributes\": {\n        \"Ad Audience\": \"0\",\n        \"Ad Blocker\": \"None\",\n        \"Ad Experiment\": \"default\",\n        \"Ad Pod Duration\": \"120\",\n        \"Ad Pod Quantity\": \"3\",\n        \"Ad Pod Type\": \"Midroll\",\n        \"Ad Tracking Opt-Out\": \"False\",\n        \"Ad Variant\": \"0\",\n        \"Brand\": \"NBC\",\n        \"Casting\": \"None\",\n        \"Device Model\": \"7216X\",\n        \"Episode Number\": \"9\",\n        \"Episode Title\": \"The Knockouts Premiere\",\n        \"Experiment\": \"None\",\n        \"First Visit\": \"False\",\n        \"MVPD\": \"DTV\",\n        \"Open Type\": \"Launch\",\n        \"Orientation\": \"None\",\n        \"Page Name\": \"Video Player\",\n        \"Page Type\": \"Video Player\",\n        \"Platform\": \"Roku\",\n        \"Product\": \"NBC App\",\n        \"Profile\": \"Unauthenticated\",\n        \"Push Opt-Out\": \"None\",\n        \"Referring Page\": \"Homepage\",\n        \"Season\": \"18\",\n        \"Show\": \"The Voice\",\n        \"Sponsor\": \"None\",\n        \"Variant\": \"None\",\n        \"Video Duration\": \"85\",\n        \"Video ID\": \"4149120\",\n        \"Video Type\": \"Full Episode\"\n      }\n    },\n    {\n      \"type\": \"custom_event\",\n      \"id\": \"f6528275-583e-42d8-9187-1509ae08af98\",\n      \"timestamp_ms\": 1589113530562,\n      \"source_id\": \"7635fa84-776a-41f9-ade2-b4c7a4277c26\",\n      \"session_id\": -5408070912439181601,\n      \"name\": \"Ad Start\",\n      \"custom_event_type\": \"user_content\",\n      \"attributes\": {\n        \"Ad Audience\": \"0\",\n        \"Ad Blocker\": \"None\",\n        \"Ad Experiment\": \"default\",\n        \"Ad Tracking Opt-Out\": \"False\",\n        \"Ad Variant\": \"0\",\n        \"adUnit\": \"None\",\n        \"advertiserName\": \"None\",\n        \"Brand\": \"NBC\",\n        \"campaignEndDate\": \"None\",\n        \"campaignName\": \"None\",\n        \"campaignStartDate\": \"None\",\n        \"Casting\": \"None\",\n        \"creativeDuration\": \"None\",\n        \"creativeInstanceEndDate\": \"None\",\n        \"creativeInstanceStartDate\": \"None\",\n        \"creativeName\": \"None\",\n        \"Device Model\": \"7216X\",\n        \"Episode Number\": \"9\",\n        \"Episode Title\": \"The Knockouts Premiere\",\n        \"Experiment\": \"None\",\n        \"First Visit\": \"False\",\n        \"mrmAdUnitID\": \"41814633\",\n        \"mrmAdvertiserID\": \"None\",\n        \"mrmCampaignID\": \"None\",\n        \"mrmCreativeID\": \"None\",\n        \"mrmCreativeRenditionID\": \"25815807\",\n        \"mrmPlacementID\": \"None\",\n        \"mrmResellerID\": \"None\",\n        \"mrmSiteSectionID\": \"None\",\n        \"MVPD\": \"DTV\",\n        \"Open Type\": \"Launch\",\n        \"Orientation\": \"None\",\n        \"Page Name\": \"Video Player\",\n        \"Page Type\": \"Video Player\",\n        \"placementEndDate\": \"None\",\n        \"placementName\": \"None\",\n        \"placementStartDate\": \"None\",\n        \"Platform\": \"Roku\",\n        \"Previous Video\": \"None\",\n        \"Previous Video Type\": \"None\",\n        \"Product\": \"NBC App\",\n        \"Profile\": \"Unauthenticated\",\n        \"Push Opt-Out\": \"None\",\n        \"Referring Page\": \"Homepage\",\n        \"resellerName\": \"None\",\n        \"Season\": \"18\",\n        \"Show\": \"The Voice\",\n        \"siteSectionName\": \"None\",\n        \"siteSectionTag\": \"nbc_ctv_vod_roku\",\n        \"Sponsor\": \"None\",\n        \"thirdPartyTagProvider\": \"None\",\n        \"Variant\": \"None\",\n        \"Video Duration\": \"85\",\n        \"Video ID\": \"4149120\",\n        \"Video Type\": \"Full Episode\"\n      }\n    }\n  ],\n  \"source_channel\": \"native\",\n  \"device_application_stamp\": \"38096250-ae8e-4627-9e1c-df19e9d6154c\",\n  \"system_notifications\": [],\n  \"firehose_version\": \"1.8.0\"\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/ingest/event/mparticle",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"ingest",
+										"event",
+										"mparticle"
+									]
+								},
+								"description": "{authorization=Token atTaB0dAxIz6HSX2TTgIpTDiCujy8flHQWz0Gr61Ro1SFbtTgNxFlXYiA-G_NJfZ, content-length=5362, host=mparticle.branch.io, content-type=application/json, x-branch-fraud-str=isp=Highland%20Communications&transport=unknown, x-forwarded-for=138.43.143.22, user-agent=mParticle Firehose/1.0.0}"
+							},
+							"response": []
+						},
+						{
+							"name": "Install Event",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-branch-app-id",
+										"value": "632046591322117012"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"update\": 0,\n  \"debug\": 0,\n  \"retryNumber\": 0,\n  \"wifi\": false,\n  \"hardware_id\": \"1B60B793-EA38-47AA-A4A5-4F18066AF121\",\n  \"sdk\": \"ios0.31.3\",\n  \"is_hardware_id_real\": 1,\n  \"os_version\": \"12.1\",\n  \"os\": \"iOS\",\n  \"model\": \"iPhone9,1\",\n  \"brand\": \"Apple\",\n  \"screen_height\": 1280,\n  \"screen_width\": 640,\n  \"app_version\": \"1.2.3\",\n  \"user_agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/604.1.21 (KHTML, like Gecko) Version/12.0 Mobile/17A6278a Safari/602.1.26\",\n  \"ad_tracking_enabled\": 1,\n  \"lat_val\": 1,\n  \"country\": \"CH\",\n  \"language\": \"en\",\n  \"environment\": \"FULL_APP\",\n  \"facebook_app_link_checked\": false,\n  \"apple_app_link_checked\": false,\n  \"first_install_time\": 1598848434,\n  \"latest_install_time\": 1598848434,\n  \"latest_update_time\": 1598848434,\n  \"previous_update_time\": 1598848434,\n  \"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n  \"metadata\": {\n   \"~preinstall_channel\" : \"a_xiaomi\",\n   \"~preinstall_campaign\": \"some_campaign\",\n   \"~campaign\":\"123457\"\n   }\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/install",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"install"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Redmi Note Open Event",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "user-agent",
+										"value": "Dalvik/2.1.0 (Linux; U; Android 9; Redmi 6 MIUI/V11.0.2.0.PCGMIXM)"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									},
+									{
+										"key": "host",
+										"value": "api2.branch.io"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"device_fingerprint_id\": \"680645629223435258\",\n\t\"identity_id\": \"680645629264911805\",\n\t\"hardware_id\": \"1f54f99428881a3c\",\n\t\"is_hardware_id_real\": true,\n\t\"brand\": \"Xiaomi\",\n\t\"model\": \"Redmi 6\",\n\t\"screen_dpi\": 320,\n\t\"screen_height\": 1344,\n\t\"screen_width\": 720,\n\t\"wifi\": false,\n\t\"ui_mode\": \"UI_MODE_TYPE_NORMAL\",\n\t\"os\": \"Android\",\n\t\"os_version\": 28,\n\t\"country\": \"ID\",\n\t\"language\": \"in\",\n\t\"local_ip\": \"10.189.74.174\",\n\t\"app_version\": \"3.64\",\n\t\"facebook_app_link_checked\": false,\n\t\"is_referrable\": 1,\n\t\"debug\": false,\n\t\"update\": 1,\n\t\"latest_install_time\": 1563516774356,\n\t\"latest_update_time\": 1583516093128,\n\t\"first_install_time\": 1563516774356,\n\t\"previous_update_time\": 1582816765866,\n\t\"environment\": \"FULL_APP\",\n\t\"cd\": {\n\t\t\"mv\": \"-1\",\n\t\t\"pn\": \"com.tokopedia.tkpd\"\n\t},\n\t\"metadata\": {\n\t\t\"$google_analytics_client_id\": \"fe5436c9-8c1a-4659-a872-37f0817af8aa\"\n\t},\n\t\"lat_val\": 0,\n\t\"google_advertising_id\": \"7bba5eee-5b54-4bfd-b966-611b4280de5b\",\n\t\"advertising_ids\": {\n\t\t\"aaid\": \"7bba5eee-5b54-4bfd-b966-611b4280de5b\"\n\t},\n\t\"instrumentation\": {\n\t\t\"v1\\/close-brtt\": \"453\",\n\t\t\"v1\\/open-qwt\": \"0\"\n\t},\n\t\"sdk\": \"android4.1.1\",\n\t\"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n\t\"retryNumber\": 0\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/open",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"open"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Open Event",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "user-agent",
+										"value": "Dalvik/2.1.0 (Linux; U; Android 9; Redmi 6 MIUI/V11.0.2.0.PCGMIXM)"
+									},
+									{
+										"key": "content-type",
+										"value": "application/json"
+									},
+									{
+										"key": "host",
+										"value": "api2.branch.io"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"device_fingerprint_id\": \"694440563942345361\",\n\t\"identity_id\": \"694440563942345361\",\n\t\"hardware_id\": \"1f54f99428881a3c\",\n\t\"is_hardware_id_real\": true,\n\t\"brand\": \"Xiaomi\",\n\t\"model\": \"Redmi 6\",\n\t\"screen_dpi\": 320,\n\t\"screen_height\": 1344,\n\t\"screen_width\": 720,\n\t\"wifi\": false,\n\t\"ui_mode\": \"UI_MODE_TYPE_NORMAL\",\n\t\"os\": \"Android\",\n\t\"os_version\": 28,\n\t\"country\": \"ID\",\n\t\"language\": \"in\",\n\t\"local_ip\": \"10.189.74.174\",\n\t\"app_version\": \"3.64\",\n\t\"facebook_app_link_checked\": false,\n\t\"is_referrable\": 1,\n\t\"debug\": false,\n\t\"update\": 1,\n\t\"latest_install_time\": 1598847834,\n\t\"latest_update_time\": 1598847834,\n\t\"first_install_time\": 1598847834,\n\t\"previous_update_time\": 1598847834,\n\t\"environment\": \"FULL_APP\",\n\t\"cd\": {\n\t\t\"mv\": \"-1\",\n\t\t\"pn\": \"com.ascendcommerce.wemall.dev\"\n\t},\n\t\"lat_val\": 0,\n\t\"google_advertising_id\": \"dda35cf6-4e19-431d-af30-c53771487061\",\n\t\"advertising_ids\": {\n\t\t\"aaid\": \"dda35cf6-4e19-431d-af30-c53771487061\"\n\t},\n\t\"instrumentation\": {\n\t\t\"v1\\/close-brtt\": \"453\",\n\t\t\"v1\\/open-qwt\": \"0\"\n\t},\n\t\"sdk\": \"android4.1.1\",\n\t\"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n\t\"retryNumber\": 0\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/open",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"open"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Track Custom Event 2",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"branch_key\": \"key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx\",\n    \"name\": \"PURCHASE\",\n    \"user_data\": {\n    \t\t\"developer_identity\": \"michael-gaylord\",\n\t\t\"revenue\": 9,\n\t\t\"shipping\": 10.5,\n\t\t\"tax\": 13.5,\n\t\t\"coupon\": \"promo-1234\",\n\t\t\"affiliation\": \"high_fi\",\n\t\t\"description\": \"Preferred purchase\",\n\t\t\"country\": \"US\"\n\t},\n    \"metadata\": {},\n\t\"content_items\": [{\n      \"$content_schema\": \"COMMERCE_PRODUCT\",\n      \"$og_title\": \"Nike Shoe\",\n      \"$og_description\": \"Start loving your steps\",\n      \"$og_image_url\": \"http://example.com/img1.jpg\",\n      \"$canonical_identifier\": \"nike/1234\",\n      \"$publicly_indexable\": false,\n      \"$price\": 101.2,\n      \"$locally_indexable\": true,\n      \"$quantity\": 1,\n      \"$sku\": \"1101123445\",\n      \"$product_name\": \"Runner\",\n      \"$product_brand\": \"Nike\",\n      \"$product_category\": \"Sporting Goods\",\n      \"$product_variant\": \"XL\",\n      \"$rating_average\": 4.2,\n      \"$rating_count\": 5,\n      \"$rating_max\": 2.2,\n      \"$creation_timestamp\": 1499892854966,\n      \"$exp_date\": 1499892854966,\n      \"$keywords\": [\n        \"sneakers\",\n        \"shoes\"\n      ],\n      \"$address_street\": \"230 South LaSalle Street\",\n      \"$address_city\": \"Chicago\",\n      \"$address_region\": \"IL\",\n      \"$address_country\": \"test_country\",\n      \"$address_postal_code\": \"60604\",\n      \"$latitude\": 12.07,\n      \"$longitude\": -97.5,\n      \"$image_captions\": [\n        \"my_img_caption1\",\n        \"my_img_caption_2\"\n      ],\n      \"$condition\": \"NEW\",\n      \"$custom_fields\": \"{\\\"foo1\\\":\\\"bar1\\\",\\\"foo2\\\":\\\"bar2\\\"}\"\n    }]\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/event/standard",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"event",
+										"standard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Track Custom Event 2 Copy",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1 Safari/605.1.15"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"branch_key\": \"key_test_kaIi9kyqw8N4nfzQUR8yGdnivvf5KDBx\",\n    \"name\": \"PURCHASE\",\n    \"user_data\": {\n    \t\t\"developer_identity\": \"michael-gaylord\",\n\t\t\"revenue\": 9,\n\t\t\"shipping\": 10.5,\n\t\t\"tax\": 13.5,\n\t\t\"coupon\": \"promo-1234\",\n\t\t\"affiliation\": \"high_fi\",\n\t\t\"description\": \"Preferred purchase\",\n\t\t\"country\": \"US\"\n\t},\n    \"metadata\": {},\n\t\"content_items\": [{\n      \"$content_schema\": \"COMMERCE_PRODUCT\",\n      \"$og_title\": \"Nike Shoe\",\n      \"$og_description\": \"Start loving your steps\",\n      \"$og_image_url\": \"http://example.com/img1.jpg\",\n      \"$canonical_identifier\": \"nike/1234\",\n      \"$publicly_indexable\": false,\n      \"$price\": 101.2,\n      \"$locally_indexable\": true,\n      \"$quantity\": 1,\n      \"$sku\": \"1101123445\",\n      \"$product_name\": \"Runner\",\n      \"$product_brand\": \"Nike\",\n      \"$product_category\": \"Sporting Goods\",\n      \"$product_variant\": \"XL\",\n      \"$rating_average\": 4.2,\n      \"$rating_count\": 5,\n      \"$rating_max\": 2.2,\n      \"$creation_timestamp\": 1499892854966,\n      \"$exp_date\": 1499892854966,\n      \"$keywords\": [\n        \"sneakers\",\n        \"shoes\"\n      ],\n      \"$address_street\": \"230 South LaSalle Street\",\n      \"$address_city\": \"Chicago\",\n      \"$address_region\": \"IL\",\n      \"$address_country\": \"test_country\",\n      \"$address_postal_code\": \"60604\",\n      \"$latitude\": 12.07,\n      \"$longitude\": -97.5,\n      \"$image_captions\": [\n        \"my_img_caption1\",\n        \"my_img_caption_2\"\n      ],\n      \"$condition\": \"NEW\",\n      \"$custom_fields\": \"{\\\"foo1\\\":\\\"bar1\\\",\\\"foo2\\\":\\\"bar2\\\"}\"\n    }]\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/event/standard",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"event",
+										"standard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Purchase Event",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n    \"name\": \"PURCHASE\",\n    \"user_data\": {\n    \t\t\"android_id\": \"c478439f-e113-4397-a9e7-88160f7ae136\",\n\t\t\"os\": \"ANDROID\",\n\t\t\"user_agent\": \"Dalvik/2.1.0 (Linux; U; Android 10; RMX1851 Build/QKQ1.190918.001)\"\n    },\n\"event_data\": {\"currency\":\"THB\",\"transaction_id\":\"TestOrder001\",\"revenue\":100,\"shipping\":20,\"tax\":7,\"coupon\":\"test\"},\n\"content_items\": [{\n\t\"$content_schema\": \"COMMERCE_PRODUCT\",\n\t\"$publicly_indexable\": true,\n\t\"$locally_indexable\": true,\n\t\"$price\": \"129\",\n\t\"$quantity\": 1,\n\t\"$sku\": \"0000020924706\",\n\t\"$product_name\": \"AUS Blueberry\",\n\t\"$product_brand\": \"NONE\",\n\t\"custom_fields\": \"{ \\\"original_price\\\": \\\"199\\\", \\\"product_category\\\": \\\"4273>Grapes,Cherries & Berries\\\"}\"\n}]\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/event/standard",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"event",
+										"standard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Track Standard SIA",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"PURCHASE\",\n  \"customer_event_alias\": \"my custom alias\",\n  \"user_data\": {\n    \"os\": \"Android\",\n    \"os_version\": 25,\n    \"environment\": \"FULL_APP\",\n    \"aaid\": \"abcdabcd-0123-0123-00f0-000000000000\",\n    \"android_id\": \"a12300000000\",\n    \"limit_ad_tracking\": false,\n    \"developer_identity\": \"user123\",\n    \"country\": \"MY\",\n    \"language\": \"en\",\n    \"local_ip\": \"192.168.1.2\",\n    \"brand\": \"LGE\",\n    \"app_version\": \"1.0.0\",\n    \"model\": \"Nexus 5X\",\n    \"screen_dpi\": 420,\n    \"screen_height\": 1794,\n    \"screen_width\": 1080\n  },\n  \"custom_data\": {\n    \"purchase_loc\": \"Palo Alto\",\n    \"store_pickup\": \"unavailable\"\n  },\n  \"event_data\": {\n    \"transaction_id\": \"trans_Id_1232343434\",\n    \"currency\": \"USD\",\n    \"revenue\": 180.2,\n    \"shipping\": 10.5,\n    \"tax\": 13.5,\n    \"coupon\": \"promo-1234\",\n    \"affiliation\": \"high_fi\",\n    \"description\": \"Preferred purchase\"\n  },\n  \"content_items\": [\n    {\n      \"$content_schema\": \"COMMERCE_PRODUCT\",\n      \"$og_title\": \"Nike Shoe\",\n      \"$og_description\": \"Start loving your steps\",\n      \"$og_image_url\": \"http://example.com/img1.jpg\",\n      \"$canonical_identifier\": \"nike/1234\",\n      \"$publicly_indexable\": false,\n      \"$price\": 101.2,\n      \"$locally_indexable\": true,\n      \"$quantity\": 1,\n      \"$sku\": \"1101123445\",\n      \"$product_name\": \"Runner\",\n      \"$product_brand\": \"Nike\",\n      \"$product_category\": \"Sporting Goods\",\n      \"$product_variant\": \"XL\",\n      \"$rating_average\": 4.2,\n      \"$rating_count\": 5,\n      \"$rating_max\": 2.2,\n      \"$creation_timestamp\": 1499892854966,\n      \"$exp_date\": 1499892854966,\n      \"$keywords\": [\n        \"sneakers\",\n        \"shoes\"\n      ],\n      \"$address_street\": \"230 South LaSalle Street\",\n      \"$address_city\": \"Chicago\",\n      \"$address_region\": \"IL\",\n      \"$address_country\": \"US\",\n      \"$address_postal_code\": \"60604\",\n      \"$latitude\": 12.07,\n      \"$longitude\": -97.5,\n      \"$image_captions\": [\n        \"my_img_caption1\",\n        \"my_img_caption_2\"\n      ],\n      \"$condition\": \"NEW\",\n      \"$custom_fields\": \"{\\\"foo1\\\":\\\"bar1\\\",\\\"foo2\\\":\\\"bar2\\\"}\"\n    },\n    {\n      \"$og_title\": \"Nike Woolen Sox\",\n      \"$canonical_identifier\": \"nike/5324\",\n      \"$og_description\": \"Fine combed woolen sox for those who love your foot\",\n      \"$publicly_indexable\": false,\n      \"$price\": 80.2,\n      \"$locally_indexable\": true,\n      \"$quantity\": 5,\n      \"$sku\": \"110112467\",\n      \"$product_name\": \"Woolen Sox\",\n      \"$product_brand\": \"Nike\",\n      \"$product_category\": \"Apparel & Accessories\",\n      \"$product_variant\": \"Xl\",\n      \"$rating_average\": 3.3,\n      \"$rating_count\": 5,\n       \"$rating_max\": 2.8,\n      \"$creation_timestamp\": 1499892854966\n     }\n   ],\n   \"metadata\": {},\n   \"branch_key\": \"key_test_nnUupNtYkNWu6qXpZUAcCflpuzi4RfDj\"\n }"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/event/standard",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"event",
+										"standard"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Track Standard Event",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n    \"name\": \"PURCHASE\",\n    \"user_data\": {\n\t\t\"android_id\": \"c478439f-e113-4397-a9e7-88160f7ae136\",\n\t\t\"developer_identity\": \"michael-gaylord\",\n\t\t\"os\" : \"Android\"\n    }\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/event/standard",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"event",
+										"standard"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Exports",
+					"item": [
+						{
+							"name": "Check Status Of Export",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Access-Token",
+										"value": "api_app_f1fdb6684fc142d5b011f9b4293722a6"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "http://api2.branch.io/v2/logs/0e51688f-744e-41a9-96dc-f95cae61d1d0?app_id=579358914718486903",
+									"protocol": "http",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"logs",
+										"0e51688f-744e-41a9-96dc-f95cae61d1d0"
+									],
+									"query": [
+										{
+											"key": "app_id",
+											"value": "579358914718486903"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Custom Data Export",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Access-Token",
+										"value": "api_app_3efa4a64792646ab8b366f4631a67b90"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"report_type\": \"eo_open\",\n    \"start_date\": \"2020-08-17T10:00:00Z\",\n    \"end_date\": \"2020-08-17T12:00:00Z\",\n    \"limit\": 1000,\n\t\"filter\": [],\n    \"fields\": [\n        \"app_id\",\n        \"user_data_aaid\",\n        \"user_data_android_id\",\n        \"user_data_app_package_name\",\n        \"user_data_app_version\",\n        \"user_data_brand\",\n        \"user_data_browser\",\n        \"user_data_build\",\n        \"user_data_cpu_type\",\n        \"user_data_cross_platform_id\",\n        \"user_data_developer_identity\",\n        \"user_data_device_type\",\n        \"user_data_environment\",\n        \"user_data_geo_city_code\",\n        \"user_data_geo_city_en\",\n        \"user_data_geo_country_code\",\n        \"user_data_geo_country_en\",\n        \"user_data_geo_dma_code\",\n        \"user_data_geo_lat\",\n        \"user_data_geo_lon\",\n        \"user_data_geo_postal_code\",\n        \"user_data_http_referrer\",\n        \"user_data_idfa\",\n        \"user_data_idfv\",\n        \"user_data_installer_package_name\",\n        \"user_data_internet_connection_type\",\n        \"user_data_ip\",\n        \"user_data_is_jailbroken\",\n        \"user_data_kindle_id\",\n        \"user_data_language\",\n        \"user_data_limit_ad_tracking\",\n        \"user_data_model\",\n        \"user_data_os\",\n        \"user_data_os_version\",\n        \"user_data_os_version_android\",\n        \"user_data_past_cross_platform_ids\",\n        \"user_data_platform\",\n        \"user_data_prob_cross_platform_ids\",\n        \"user_data_screen_height\",\n        \"user_data_screen_width\",\n        \"user_data_sdk_version\",\n        \"user_data_tune_mat_id\",\n        \"user_data_user_agent\",\n        \"user_data_windows_aid\",\n        \"user_data_device_locale\",\n        \"user_data_carrier_name\",\n        \"seconds_from_last_attributed_touch_to_store_install_begin\",\n        \"seconds_from_install_to_event\",\n        \"last_attributed_touch_data_tilde_advertising_account_id\",\n        \"last_attributed_touch_data_tilde_advertising_account_name\"\n    ]\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v2/logs?app_id=629346946338803981",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v2",
+										"logs"
+									],
+									"query": [
+										{
+											"key": "app_id",
+											"value": "629346946338803981"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Data Export",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"branch_key\":\"key_live_oduZnfgxN83eqtG1FqVbrijiuAf6Xx3f\",\"branch_secret\":\"secret_live_wq7n5yguEBKhJYWRpLef8wXXdNojCOVZ\",\"export_date\":\"2020-05-25\"}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v3/export",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v3",
+										"export"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Deeplinked",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"branch_key\": \"key_live_oduZnfgxN83eqtG1FqVbrijiuAf6Xx3f\",\n    \"branch_secret\": \"secret_live_wq7n5yguEBKhJYWRpLef8wXXdNojCOVZ\",\n\t\"start_date\": \"2020-04-01\",\n  \t\"end_date\": \"2020-04-07\",\n\t\"data_source\": \"eo_open\",\n\t\"granularity\": \"all\",\n \t\"dimensions\": [\n\t\t\"last_attributed_touch_data_tilde_id\"\n\t],\n\t\"filters\": {\n\t\t\"deep_linked\": [\n\t\t\t\"true\"\n\t\t],\n\t\t\"last_attributed_touch_data_tilde_id\": [\n\t\t\t\"741613299514392909\"\n\t\t]\n\t},\n\t\"aggregation\": \"unique_count\"\n}\n"
+								},
+								"url": {
+									"raw": "http://api.branch.io/v1/query/analytics?limit=100",
+									"protocol": "http",
+									"host": [
+										"api",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"query",
+										"analytics"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Query Export API",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"branch_key\": \"key_live_odyHtTXnKNa5u09c0wLEtbioxxgn5DE8\",\n\t\"branch_secret\": \"secret_live_DisGrAEcobsefYGWua9aqcxx2IgCTo8K\",\n\t\"start_date\": \"2020-08-16\",\n\t\"end_date\": \"2020-08-22\",\n\t\"data_source\": \"eo_click\",\n\t\"granularity\": \"day\",\n\t\"dimensions\": [\"last_attributed_touch_data_tilde_advertising_partner_name\", \"user_data_platform\", \"last_attributed_touch_data_tilde_campaign\", \"last_attributed_touch_data_tilde_tags\", \"last_attributed_touch_data_tilde_channel\"],\n\t\"filters\": {\n\t\t\"last_attributed_touch_data_tilde_channel\": [\"Blog\"],\n\t\t\"last_attributed_touch_data_tilde_tags\": [\"Blog\"]\n\t},\n\t\"aggregation\": \"total_count\"\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/query/analytics?limit=100",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"query",
+										"analytics"
+									],
+									"query": [
+										{
+											"key": "limit",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Link API",
+					"item": [
+						{
+							"name": "Get Ad Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https%3A%2F%2Fbranchster.app.link%2F94tO8ZG5kV%3F%25243p%3Da_facebook%26~ad_id%3D%7B%7Bad.id%7D%7D%26~ad_name%3D%7B%7Bad.name%7D%7D%26~ad_set_id%3D%7B%7Badset.id%7D%7D%26~ad_set_name%3D%7B%7Badset.name%7D%7D%26~campaign%3D%7B%7Bcampaign.name%7D%7D%26~campaign_id%3D%7B%7Bcampaign.id%7D%7D&branch_key=key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https%3A%2F%2Fbranchster.app.link%2F94tO8ZG5kV%3F%25243p%3Da_facebook%26~ad_id%3D%7B%7Bad.id%7D%7D%26~ad_name%3D%7B%7Bad.name%7D%7D%26~ad_set_id%3D%7B%7Badset.id%7D%7D%26~ad_set_name%3D%7B%7Badset.name%7D%7D%26~campaign%3D%7B%7Bcampaign.name%7D%7D%26~campaign_id%3D%7B%7Bcampaign.id%7D%7D"
+										},
+										{
+											"key": "branch_key",
+											"value": "key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read a Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https://share.tops.co.th/WXgmWfYWQ8&branch_key=key_live_pgFOV6dC0Bd7rEOFC78x8mppvDkkgR1h",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https://share.tops.co.th/WXgmWfYWQ8"
+										},
+										{
+											"key": "branch_key",
+											"value": "key_live_pgFOV6dC0Bd7rEOFC78x8mppvDkkgR1h"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Read a Link Duplicate",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https%3A%2F%2Fcarousell.app.link%2F3v6LX2dV97%3F%25243p%3Da_facebook%26%7Ead_id%3D%7B%7Bad.id%7D%7D%26%7Ead_name%3D%7B%7Bad.name%7D%7D%26%7Ead_set_id%3D%7B%7Badset.id%7D%7D%26%7Ead_set_name%3D%7B%7Badset.name%7D%7D%26%7Ecampaign%3D%7B%7Bcampaign.name%7D%7D%26%7Ecampaign_id%3D%7B%7Bcampaign.id%7D%7D%26%24deeplink_path%3Dcarousell%253A%252F%252Fcategories%252F1583%26%2524fallback_url%3Dhttps%253A%252F%252Fsg.carousell.com%252Fcategories%252Fproperty-102%252Fhousing-for-sale-230%252Fhdb-1583%252F%253F%26utm_campaign%3Dagency_799548596637683768SG_AND_ADGO_Jeffrey.Yam%26utm_medium%3DDisplay&branch_key=key_live_odyHtTXnKNa5u09c0wLEtbioxxgn5DE8",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https%3A%2F%2Fcarousell.app.link%2F3v6LX2dV97%3F%25243p%3Da_facebook%26%7Ead_id%3D%7B%7Bad.id%7D%7D%26%7Ead_name%3D%7B%7Bad.name%7D%7D%26%7Ead_set_id%3D%7B%7Badset.id%7D%7D%26%7Ead_set_name%3D%7B%7Badset.name%7D%7D%26%7Ecampaign%3D%7B%7Bcampaign.name%7D%7D%26%7Ecampaign_id%3D%7B%7Bcampaign.id%7D%7D%26%24deeplink_path%3Dcarousell%253A%252F%252Fcategories%252F1583%26%2524fallback_url%3Dhttps%253A%252F%252Fsg.carousell.com%252Fcategories%252Fproperty-102%252Fhousing-for-sale-230%252Fhdb-1583%252F%253F%26utm_campaign%3Dagency_799548596637683768SG_AND_ADGO_Jeffrey.Yam%26utm_medium%3DDisplay"
+										},
+										{
+											"key": "branch_key",
+											"value": "key_live_odyHtTXnKNa5u09c0wLEtbioxxgn5DE8"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Quick Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"branch_key\":\"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\"branch_secret\":\"secret_live_DrzU7D1dw4iNaAL9xGmtqdcYXrf6cZzK\",\"feature\":\"email\",\"campaign\":\"testing-email-campaign\",\"$3p\":\"e_emarsys\",\"%24fallback_url\":\"https://www.google.com\"}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https://tab.test-app.link/migration",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https://tab.test-app.link/migration"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Quick Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"branch_key\": \"key_live_pgFOV6dC0Bd7rEOFC78x8mppvDkkgR1h\",\n  \"data\": {\n    \"$fallback_url\": \"https://www.tops.co.th/th/locked-price\"\n  }\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/url",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Quick Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n  \"campaign\": \"campaign2\",\n  \"data\": {\n\t\"test123\" : null\n  }\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https%3A%2F%2Fbranchster.app.link%2F94tO8ZG5kV%3F%25243p%3Da_facebook%26~ad_id%3D%7B%7Bad.id%7D%7D%26~ad_name%3D%7B%7Bad.name%7D%7D%26~ad_set_id%3D%7B%7Badset.id%7D%7D%26~ad_set_name%3D%7B%7Badset.name%7D%7D%26~campaign%3D%7B%7Bcampaign.name%7D%7D%26~campaign_id%3D%7B%7Bcampaign.id%7D%7D",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https%3A%2F%2Fbranchster.app.link%2F94tO8ZG5kV%3F%25243p%3Da_facebook%26~ad_id%3D%7B%7Bad.id%7D%7D%26~ad_name%3D%7B%7Bad.name%7D%7D%26~ad_set_id%3D%7B%7Badset.id%7D%7D%26~ad_set_name%3D%7B%7Badset.name%7D%7D%26~campaign%3D%7B%7Bcampaign.name%7D%7D%26~campaign_id%3D%7B%7Bcampaign.id%7D%7D"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Quick Link",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"branch_secret\": \"secret_live_DaD8eEQkRZDQWtr5cealU4L1o0TVYFgH\",\n\t\"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n\t\"data\": {\n\t\t\"~campaign\": \"campaign_new\"\n\t}\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https://agjs.app.link/WBxX9zh597",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https://agjs.app.link/WBxX9zh597"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Quick Link Duplicate",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"branch_secret\": \"secret_live_DrzU7D1dw4iNaAL9xGmtqdcYXrf6cZzK\",\n\t\"branch_key\": \"key_live_gpQjWaEAt2OYhaCRUV6vvjeeArkYPErm\",\n\t\"campaign\": \"campaign_new\",\n\t\"data\": {\n\n\t}\n}"
+								},
+								"url": {
+									"raw": "https://api2.branch.io/v1/url?url=https://agjs.app.link/wHZI9n5697",
+									"protocol": "https",
+									"host": [
+										"api2",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"url"
+									],
+									"query": [
+										{
+											"key": "url",
+											"value": "https://agjs.app.link/wHZI9n5697"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Persona",
+					"item": [
+						{
+							"name": "Persona IDFA",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"idfa\":\"E67C988D-D139-4E24-9102-A26A88364EE8\"}"
+								},
+								"url": {
+									"raw": "http://persona.prod.branch.io/v1/persona/get",
+									"protocol": "http",
+									"host": [
+										"persona",
+										"prod",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"persona",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Persona BFP",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"browser\":\"641815518223177671\"}"
+								},
+								"url": {
+									"raw": "http://persona.prod.branch.io/v1/persona/get",
+									"protocol": "http",
+									"host": [
+										"persona",
+										"prod",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"persona",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Persona GAID",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"gaid\":\"11e20918-e0cd-4cb1-a39e-4371e90f078b\"}"
+								},
+								"url": {
+									"raw": "http://persona.prod.branch.io/v1/persona/get",
+									"protocol": "http",
+									"host": [
+										"persona",
+										"prod",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"persona",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Persona ID",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":\"5e5f78297122fd000bf993f2\"}"
+								},
+								"url": {
+									"raw": "http://persona.prod.branch.io/v1/persona/get",
+									"protocol": "http",
+									"host": [
+										"persona",
+										"prod",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"persona",
+										"get"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Scraper",
+					"item": [
+						{
+							"name": "Scraper Metadata",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "01e9efc4-2115-4172-aaa8-6518a44403f1"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uri\":\"https://www.tops.co.th/th/best-deal/promotion-best-deal-on-5-11-aug-2020\"}"
+								},
+								"url": {
+									"raw": "http://scraper.stage.branch.io/v1/scrape/metadata",
+									"protocol": "http",
+									"host": [
+										"scraper",
+										"stage",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"scrape",
+										"metadata"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Scraper Linkdata",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Cache-Control",
+										"value": "no-cache"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Postman-Token",
+										"value": "01e9efc4-2115-4172-aaa8-6518a44403f1"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uri\":\"https://www.tops.co.th/th/avocado-pack-0000024967372\"}"
+								},
+								"url": {
+									"raw": "http://scraper.stage.branch.io/v1/scrape/link_data",
+									"protocol": "http",
+									"host": [
+										"scraper",
+										"stage",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"scrape",
+										"link_data"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Scraper Linkdata Duplicate",
+							"protocolProfileBehavior": {
+								"followRedirects": false,
+								"followOriginalHttpMethod": false,
+								"followAuthorizationHeader": false
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Cache-Control",
+										"value": "no-cache"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uri\":\"https://www.tops.co.th/th/avocado-pack-0000024967372\"}"
+								},
+								"url": {
+									"raw": "http://scraper.stage.branch.io/v1/scrape/link_data",
+									"protocol": "http",
+									"host": [
+										"scraper",
+										"stage",
+										"branch",
+										"io"
+									],
+									"path": [
+										"v1",
+										"scrape",
+										"link_data"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Export Lambda",
+			"item": [
+				{
+					"name": "Upload Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"filename\": \"blah\",\n\"events\": [{\"id\": \"709211000276607443\", \"name\": \"PURCHASE\", \"timestamp\": \"1570327305454\", \"timestamp_iso\": \"2019-10-06 02:01:45+0000\", \"origin\": \"BRANCH\", \"last_attributed_touch_type\": \"CLICK\", \"last_attributed_touch_timestamp\": \"1570327242000\", \"last_attributed_touch_timestamp_iso\": \"2019-10-06 02:00:42+0000\", \"last_attributed_touch_data_tilde_id\": \"\", \"last_attributed_touch_data_tilde_campaign\": \"Criteo1\", \"last_attributed_touch_data_tilde_campaign_id\": \"\", \"last_attributed_touch_data_tilde_channel\": \"Criteo1\", \"last_attributed_touch_data_tilde_feature\": \"paid advertising\", \"last_attributed_touch_data_tilde_stage\": \"\", \"last_attributed_touch_data_tilde_tags\": \"[]\", \"last_attributed_touch_data_tilde_advertising_partner_name\": \"Criteo\", \"last_attributed_touch_data_tilde_secondary_publisher\": \"\", \"last_attributed_touch_data_tilde_creative_name\": \"\", \"last_attributed_touch_data_tilde_creative_id\": \"\", \"last_attributed_touch_data_tilde_ad_set_name\": \"\", \"last_attributed_touch_data_tilde_ad_set_id\": \"\", \"last_attributed_touch_data_tilde_ad_name\": \"\", \"last_attributed_touch_data_tilde_ad_id\": \"\", \"last_attributed_touch_data_tilde_branch_ad_format\": \"App Only\", \"last_attributed_touch_data_tilde_technology_partner\": \"\", \"last_attributed_touch_data_tilde_banner_dimensions\": \"\", \"last_attributed_touch_data_tilde_placement\": \"\", \"last_attributed_touch_data_tilde_keyword_id\": \"\", \"last_attributed_touch_data_tilde_agency\": \"\", \"last_attributed_touch_data_tilde_optimization_model\": \"\", \"last_attributed_touch_data_tilde_secondary_ad_format\": \"\", \"last_attributed_touch_data_tilde_journey_name\": \"\", \"last_attributed_touch_data_tilde_journey_id\": \"\", \"last_attributed_touch_data_tilde_view_name\": \"\", \"last_attributed_touch_data_tilde_view_id\": \"\", \"last_attributed_touch_data_plus_current_feature\": \"\", \"last_attributed_touch_data_plus_via_features\": \"[\\\"ADS\\\"]\", \"last_attributed_touch_data_dollar_3p\": \"a_criteo\", \"last_attributed_touch_data_plus_web_format\": \"\", \"last_attributed_touch_data_custom_fields\": \"{\\\"+domain\\\":\\\"branch-demo.app.link\\\",\\\"+url\\\":\\\"https:\\\\/\\\\/branch-demo.app.link\\\\/Umi1abA8AS?%243p=a_criteo&%24aaid=81af7c53-8723-c7cc-3806-ec0d69a7b863&%24s2s=true&%7Ecampaign=campaign&%7Ecost_model=CPC\\\",\\\"$s2s\\\":\\\"true\\\",\\\"+device_os\\\":\\\"ANDROID\\\",\\\"$link_title\\\":\\\"Criteo Link #1\\\",\\\"+geo_country_code\\\":\\\"US\\\",\\\"$aaid\\\":\\\"81af7c53-8723-c7cc-3806-ec0d69a7b863\\\",\\\"+click_timestamp\\\":1570327242,\\\"~cost_model\\\":\\\"CPC\\\",\\\"$one_time_use\\\":false}\", \"days_from_last_attributed_touch_to_event\": \"0\", \"hours_from_last_attributed_touch_to_event\": \"\", \"minutes_from_last_attributed_touch_to_event\": \"\", \"seconds_from_last_attributed_touch_to_event\": \"\", \"last_cta_view_timestamp\": \"\", \"last_cta_view_timestamp_iso\": \"\", \"last_cta_view_data_tilde_id\": \"\", \"last_cta_view_data_tilde_campaign\": \"\", \"last_cta_view_data_tilde_campaign_id\": \"\", \"last_cta_view_data_tilde_channel\": \"\", \"last_cta_view_data_tilde_feature\": \"\", \"last_cta_view_data_tilde_stage\": \"\", \"last_cta_view_data_tilde_tags\": \"[]\", \"last_cta_view_data_tilde_advertising_partner_name\": \"\", \"last_cta_view_data_tilde_secondary_publisher\": \"\", \"last_cta_view_data_tilde_creative_name\": \"\", \"last_cta_view_data_tilde_creative_id\": \"\", \"last_cta_view_data_tilde_ad_set_name\": \"\", \"last_cta_view_data_tilde_ad_set_id\": \"\", \"last_cta_view_data_tilde_ad_name\": \"\", \"last_cta_view_data_tilde_ad_id\": \"\", \"last_cta_view_data_tilde_branch_ad_format\": \"\", \"last_cta_view_data_tilde_technology_partner\": \"\", \"last_cta_view_data_tilde_banner_dimensions\": \"\", \"last_cta_view_data_tilde_placement\": \"\", \"last_cta_view_data_tilde_keyword_id\": \"\", \"last_cta_view_data_tilde_agency\": \"\", \"last_cta_view_data_tilde_optimization_model\": \"\", \"last_cta_view_data_tilde_secondary_ad_format\": \"\", \"last_cta_view_data_plus_via_features\": \"[]\", \"last_cta_view_data_dollar_3p\": \"\", \"last_cta_view_data_plus_web_format\": \"\", \"last_cta_view_data_custom_fields\": \"\", \"deep_linked\": \"false\", \"first_event_for_user\": \"true\", \"user_data_os\": \"ANDROID\", \"user_data_os_version\": \"26\", \"user_data_model\": \"Pixel\", \"user_data_browser\": \"Chrome\", \"user_data_geo_country_code\": \"US\", \"user_data_app_version\": \"5.12.1\", \"user_data_sdk_version\": \"3.0.4\", \"user_data_geo_dma_code\": \"807\", \"user_data_environment\": \"FULL_APP\", \"user_data_platform\": \"ANDROID_APP\", \"user_data_aaid\": \"81af7c53-8723-c7cc-3806-ec0d69a7b863\", \"user_data_idfa\": \"\", \"user_data_idfv\": \"\", \"user_data_android_id\": \"\", \"user_data_limit_ad_tracking\": \"false\", \"user_data_user_agent\": \"Mozilla/5.0 (Linux; Android 8.0.0; Pixel Build/OPR3.170623.008) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36\", \"user_data_ip\": \"52.53.190.227\", \"user_data_developer_identity\": \"123456789\", \"user_data_language\": \"EN\", \"user_data_brand\": \"Google\", \"di_match_click_token\": \"\", \"event_data_revenue_in_usd\": \"10.0\", \"event_data_exchange_rate\": \"1.0\", \"event_data_transaction_id\": \"\", \"event_data_revenue\": \"10.0\", \"event_data_currency\": \"USD\", \"event_data_shipping\": \"\", \"event_data_tax\": \"\", \"event_data_coupon\": \"\", \"event_data_affiliation\": \"\", \"event_data_search_query\": \"\", \"event_data_description\": \"\", \"custom_data\": \"{}\", \"last_attributed_touch_data_tilde_keyword\": \"\", \"user_data_cross_platform_id\": \"\", \"user_data_past_cross_platform_ids\": \"[]\", \"user_data_prob_cross_platform_ids\": \"[]\", \"store_install_begin_timestamp\": \"\", \"referrer_click_timestamp\": \"\", \"user_data_os_version_android\": \"\", \"user_data_geo_city_code\": \"5392171\", \"user_data_geo_city_en\": \"San Jose\", \"user_data_http_referrer\": \"\", \"event_timestamp\": \"1570327305454\", \"customer_event_alias\": \"\", \"last_attributed_touch_data_tilde_customer_campaign\": \"\", \"last_attributed_touch_data_tilde_campaign_type\": \"\", \"last_cta_view_data_tilde_campaign_type\": \"\", \"last_attributed_touch_data_tilde_agency_id\": \"\", \"last_attributed_touch_data_plus_touch_id\": \"709210733960652520\", \"last_cta_view_data_plus_touch_id\": \"\", \"user_data_installer_package_name\": \"\", \"user_data_cpu_type\": \"\", \"user_data_screen_width\": \"1080\", \"user_data_screen_height\": \"1794\", \"user_data_build\": \"\", \"user_data_internet_connection_type\": \"\", \"hash_version\": \"UNHASHED\" }]\n}"
+						},
+						"url": {
+							"raw": "https://g16mhgna27.execute-api.us-east-1.amazonaws.com/dev/upload",
+							"protocol": "https",
+							"host": [
+								"g16mhgna27",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remote Export Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://2af0ndbds8.execute-api.us-east-1.amazonaws.com/dev/export",
+							"protocol": "https",
+							"host": [
+								"2af0ndbds8",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Export Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/export",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Report Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"service\": \"Segment\",\n\"files_count\": 10,\n\"failed_events_count\": 100,\n\"errors\": \"\",\n\"messages\": \"\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/report",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Download Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/download",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Transform Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"template\":\"\",\"partials\":{\"device\":\"\",\"advertisingIds\":\"\",\"properties\":\"\",\"lastAttributedTouchData\":\"\",\"campaign\":\"\"},\"events\":{\"events\":\"\"}}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/test",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remote Transform Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"events\":\"\"}"
+						},
+						"url": {
+							"raw": "https://2af0ndbds8.execute-api.us-east-1.amazonaws.com/dev/test",
+							"protocol": "https",
+							"host": [
+								"2af0ndbds8",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remote Download Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://2af0ndbds8.execute-api.us-east-1.amazonaws.com/dev/download",
+							"protocol": "https",
+							"host": [
+								"2af0ndbds8",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"download"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Local Check Status Lambda",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/status?location=https%3A%2F%2Fbranch-exports-web.s3.amazonaws.com%2F388787843096400122-2019-07-29-eo_branch_cta_view-v2-2768a829af90bd01ff0f1d1dbe337d61682560045bffe70cd433df4f67028592-caJ9Mi.csv.gz%3FSignature%3DhLTNGclr7ozsHUgTANjJZZoKtEE%253D%26AWSAccessKeyId%3DAKIAI7A6NRHGMRDK2LIQ%26Expires%3D1565112400",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"status"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "https%3A%2F%2Fbranch-exports-web.s3.amazonaws.com%2F388787843096400122-2019-07-29-eo_branch_cta_view-v2-2768a829af90bd01ff0f1d1dbe337d61682560045bffe70cd433df4f67028592-caJ9Mi.csv.gz%3FSignature%3DhLTNGclr7ozsHUgTANjJZZoKtEE%253D%26AWSAccessKeyId%3DAKIAI7A6NRHGMRDK2LIQ%26Expires%3D1565112400"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Google Analytics",
+			"item": [
+				{
+					"name": "GA Collection API",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://google-analytics.com/collect?v=1&tid=UA-106754221-1&ds=app&an=BRANCH-APP&t=event&ec=BranchEvent&cid=&cn=&cs=&cm=marketing&ck=&cc=&ea=OPEN&uip=203.117.160.250&ua=Mozilla/5.0 (Linux; 28; Dalvik/2.1.0+(Linux;+U;+Android+9;+AOSP+on+IA+Emulator+Build/PSR1.180720.117) Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/8.0.1025.133 Mobile Safari/535.19 [Branch Webhook]&z=1583204242107",
+							"protocol": "https",
+							"host": [
+								"google-analytics",
+								"com"
+							],
+							"path": [
+								"collect"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": "1"
+								},
+								{
+									"key": "tid",
+									"value": "UA-106754221-1"
+								},
+								{
+									"key": "ds",
+									"value": "app"
+								},
+								{
+									"key": "an",
+									"value": "BRANCH-APP"
+								},
+								{
+									"key": "t",
+									"value": "event"
+								},
+								{
+									"key": "ec",
+									"value": "BranchEvent"
+								},
+								{
+									"key": "cid",
+									"value": ""
+								},
+								{
+									"key": "cn",
+									"value": ""
+								},
+								{
+									"key": "cs",
+									"value": ""
+								},
+								{
+									"key": "cm",
+									"value": "marketing"
+								},
+								{
+									"key": "ck",
+									"value": ""
+								},
+								{
+									"key": "cc",
+									"value": ""
+								},
+								{
+									"key": "ea",
+									"value": "OPEN"
+								},
+								{
+									"key": "uip",
+									"value": "203.117.160.250"
+								},
+								{
+									"key": "ua",
+									"value": "Mozilla/5.0 (Linux; 28; Dalvik/2.1.0+(Linux;+U;+Android+9;+AOSP+on+IA+Emulator+Build/PSR1.180720.117) Build/IMM76B) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/8.0.1025.133 Mobile Safari/535.19 [Branch Webhook]"
+								},
+								{
+									"key": "z",
+									"value": "1583204242107"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Google Analytics Track",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://www.google-analytics.com/collect?v=1&tid=UA-106754221-1&ds=app&an=BRANCH-APP&t=event&ec=BranchEvent&cid=fe5436c9-8c1a-4659-a872-37f0817af8aa&cn=&cs=&cm=&ck=&cc=&ea=REDMI_6_POSTBACK_WEB_UA&uip=4.15.122.138&ua=Mozilla/5.0 (Linux; Android 8.1.0; Redmi 6 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 &qt=90832&z=1584073598601",
+							"protocol": "https",
+							"host": [
+								"www",
+								"google-analytics",
+								"com"
+							],
+							"path": [
+								"collect"
+							],
+							"query": [
+								{
+									"key": "v",
+									"value": "1"
+								},
+								{
+									"key": "tid",
+									"value": "UA-106754221-1"
+								},
+								{
+									"key": "ds",
+									"value": "app"
+								},
+								{
+									"key": "an",
+									"value": "BRANCH-APP"
+								},
+								{
+									"key": "t",
+									"value": "event"
+								},
+								{
+									"key": "ec",
+									"value": "BranchEvent"
+								},
+								{
+									"key": "cid",
+									"value": "fe5436c9-8c1a-4659-a872-37f0817af8aa"
+								},
+								{
+									"key": "cn",
+									"value": ""
+								},
+								{
+									"key": "cs",
+									"value": ""
+								},
+								{
+									"key": "cm",
+									"value": ""
+								},
+								{
+									"key": "ck",
+									"value": ""
+								},
+								{
+									"key": "cc",
+									"value": ""
+								},
+								{
+									"key": "ea",
+									"value": "REDMI_6_POSTBACK_WEB_UA"
+								},
+								{
+									"key": "uip",
+									"value": "4.15.122.138"
+								},
+								{
+									"key": "ua",
+									"value": "Mozilla/5.0 (Linux; Android 8.1.0; Redmi 6 Build/O11019; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 Mobile Safari/537.36 "
+								},
+								{
+									"key": "qt",
+									"value": "90832"
+								},
+								{
+									"key": "z",
+									"value": "1584073598601"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mixpanel",
+			"item": [
+				{
+					"name": "Mixpanel API TMN",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "0a0b7b7bb43c44384d8f9bcb040c61c9",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.mixpanel.com/track?data=eyJldmVudCI6IltCcmFuY2hdIE9QRU4iLCJwcm9wZXJ0aWVzIjp7InRva2VuIjoiNmIwNjdkYzEyOWJiZTY3ZDkwMDU5MGM0ZDRkNGRiNTciLCJpcCI6IjE2OS4wLjEwOC4yMzYiLCJ0aW1lIjoiMTU3Nzk1NTEwNCIsImRpc3RpbmN0X2lkIjoiNjQ5RjQwODItNUI1Ni00MEE5LUJEN0YtMDNDMjlFMkZCNzVFIiwib3MiOiJJT1MiLCJ-dGFncyI6IiIsIit2aWFfZmVhdHVyZXMiOiJRVUlDS19MSU5LUyIsIiRvZ190aXRsZSI6IkxhdGluIG9ubHkgVGl0bGUiLCIkbWFya2V0aW5nX3RpdGxlIjoiVE1OIFRlc3QiLCJ-Y3JlYXRpb25fc291cmNlIjoiMSIsIiRvZ19kZXNjcmlwdGlvbiI6IkxhdGluIE9ubHkgRGVzY3JpcHRpb24gIiwiK2NsaWNrX3RpbWVzdGFtcCI6IjE1Nzc5NTUwOTciLCIkdHdpdHRlcl9jYXJkIjoic3VtbWFyeSIsIiRpb3NfcGFzc2l2ZV9kZWVwdmlldyI6ImJyYW5jaF9wYXNzaXZlX2RlZmF1bHQiLCIkb2dfaW1hZ2VfdXJsIjoiaHR0cHM6Ly9jZG4udHJ1ZW1vbmV5LmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxOC8wOS9sb2dvLXRydWVtb25leXdhbGxldC0zMDB4MzAwLmpwZyIsIn5mZWF0dXJlIjoibWFya2V0aW5nIiwiJG9nX3R5cGUiOiJhcnRpY2xlIiwiK3VybCI6Imh0dHBzOi8vYWdqcy5hcHAubGluay82NUcxUlRoU1UyIiwifm1hcmtldGluZyI6dHJ1ZSwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijc0MTIwMTcwODg3MzU3NzEzNiIsIiRjYW5vbmljYWxfdXJsIjoiaHR0cHM6Ly93d3cudHJ1ZW1vbmV5LmNvbS9jYXNoYmFjay03LWVsZXZlbi8ifX0=&is_first_event=0",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mixpanel",
+								"com"
+							],
+							"path": [
+								"track"
+							],
+							"query": [
+								{
+									"key": "data",
+									"value": "eyJldmVudCI6IltCcmFuY2hdIE9QRU4iLCJwcm9wZXJ0aWVzIjp7InRva2VuIjoiNmIwNjdkYzEyOWJiZTY3ZDkwMDU5MGM0ZDRkNGRiNTciLCJpcCI6IjE2OS4wLjEwOC4yMzYiLCJ0aW1lIjoiMTU3Nzk1NTEwNCIsImRpc3RpbmN0X2lkIjoiNjQ5RjQwODItNUI1Ni00MEE5LUJEN0YtMDNDMjlFMkZCNzVFIiwib3MiOiJJT1MiLCJ-dGFncyI6IiIsIit2aWFfZmVhdHVyZXMiOiJRVUlDS19MSU5LUyIsIiRvZ190aXRsZSI6IkxhdGluIG9ubHkgVGl0bGUiLCIkbWFya2V0aW5nX3RpdGxlIjoiVE1OIFRlc3QiLCJ-Y3JlYXRpb25fc291cmNlIjoiMSIsIiRvZ19kZXNjcmlwdGlvbiI6IkxhdGluIE9ubHkgRGVzY3JpcHRpb24gIiwiK2NsaWNrX3RpbWVzdGFtcCI6IjE1Nzc5NTUwOTciLCIkdHdpdHRlcl9jYXJkIjoic3VtbWFyeSIsIiRpb3NfcGFzc2l2ZV9kZWVwdmlldyI6ImJyYW5jaF9wYXNzaXZlX2RlZmF1bHQiLCIkb2dfaW1hZ2VfdXJsIjoiaHR0cHM6Ly9jZG4udHJ1ZW1vbmV5LmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxOC8wOS9sb2dvLXRydWVtb25leXdhbGxldC0zMDB4MzAwLmpwZyIsIn5mZWF0dXJlIjoibWFya2V0aW5nIiwiJG9nX3R5cGUiOiJhcnRpY2xlIiwiK3VybCI6Imh0dHBzOi8vYWdqcy5hcHAubGluay82NUcxUlRoU1UyIiwifm1hcmtldGluZyI6dHJ1ZSwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijc0MTIwMTcwODg3MzU3NzEzNiIsIiRjYW5vbmljYWxfdXJsIjoiaHR0cHM6Ly93d3cudHJ1ZW1vbmV5LmNvbS9jYXNoYmFjay03LWVsZXZlbi8ifX0="
+								},
+								{
+									"key": "is_first_event",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mixpanel API",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "0a0b7b7bb43c44384d8f9bcb040c61c9",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "data=eyAiZXZlbnQiOiIkc2lnbnVwIiwgInByb3BlcnRpZXMiOiB7ImRpc3RpbmN0X2lkIjogIjQ4MSIsInRpbWUiOiAxMzIxNDk5MzcxLCJ0b2tlbiI6ICI2YjA2N2RjMTI5YmJlNjdkOTAwNTkwYzRkNGQ0ZGI1NyJ9fQ=="
+						},
+						"url": {
+							"raw": "https://api.mixpanel.com/import",
+							"protocol": "https",
+							"host": [
+								"api",
+								"mixpanel",
+								"com"
+							],
+							"path": [
+								"import"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Offline Conversions",
+			"item": [
+				{
+					"name": "Send Local",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deep_linked\": \"false\",\n\t\"origin\": \"SEGMENT\",\n\t\"event_data\": {\n\t\t\"transaction_id\": \"B730BFBA-76A9-4199-AA95-92F323203D0A\",\n\t\t\"currency\": \"MYR\",\n\t\t\"revenue\": 1234.56,\n\t\t\"revenue_in_usd\": 286.00949843623306,\n\t\t\"exchange_rate\": 4.3165,\n\t\t\"shipping\": 0.0,\n\t\t\"tax\": 0.0\n\t},\n\t\"event_timestamp\": 1589450204000,\n\t\"days_from_last_attributed_touch_to_event\": 0,\n\t\"content_items\": [{\n\t\t\"$publicly_indexable\": false,\n\t\t\"$locally_indexable\": false,\n\t\t\"$exp_date\": 0,\n\t\t\"$canonical_url\": \"https://giphy.com/gifs/tequila-was-a-bad-choice-minus-the-black-eye-i-guess-literally-me-this-morning-Wmjvx4XQ8OJWg\",\n\t\t\"$og_image_url\": \"\",\n\t\t\"$price\": 701.0,\n\t\t\"$quantity\": 1.0,\n\t\t\"$sku\": \"sku_Wmjvx4XQ8OJWg\",\n\t\t\"$product_name\": \"ralph macchio literally me this morning GIF\",\n\t\t\"$rating_average\": 0.0,\n\t\t\"$rating_max\": 0.0,\n\t\t\"$latitude\": 0.0,\n\t\t\"$longitude\": 0.0,\n\t\t\"$creation_timestamp\": 0\n\t}],\n\t\"id\": \"6BA779C2-3964-4419-AA50-A601E1F76DC1\",\n\t\"last_attributed_touch_data\": {\n\t\t\"$3p\": \"a_google_adwords\",\n\t\t\"~ad_set_id\": \"78891668804\",\n\t\t\"~feature\": \"paid advertising\",\n\t\t\"~campaign_id\": \"6454145704\",\n\t\t\"~advertising_partner_id\": \"5\",\n\t\t\"~campaign\": \"TH_NEW_WEB_GG_ALL_SMS\",\n\t\t\"~channel\": \"Google AdWords\",\n\t\t\"+user_data_user_agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Safari/604.1\",\n\t\t\"~tune_publisher_name\": \"Google AdWords\",\n\t\t\"+touch_id\": \"786016036936492524\",\n\t\t\"~advertising_partner_name\": \"Google AdWords\",\n\t\t\"+user_data_ip\": \"2001:fb1:37:4969:ec86:210b:3db8:6285\",\n\t\t\"~branch_ad_format\": \"Cross-Platform Search\",\n\t\t\"$android_passive_deepview\": false,\n\t\t\"$og_title\": \"POMELO Fashion | Get all the latest fashion, updated twice every week! - Pomelo\",\n\t\t\"$deeplink_path\": \"deeplink\",\n\t\t\"+device_os_version\": \"10.15\",\n\t\t\"$og_description\": \"Shop the latest fashion at POMELO fashion. Designed and manufactured in house for quality and style. Dresses, tops, knits, jackets, denim, accessories and more!\",\n\t\t\"+click_timestamp\": 1588639053,\n\t\t\"$ios_passive_deepview\": false,\n\t\t\"$og_image_url\": \"https://pomelofashion.imgix.net/img/pomelo-logo-square.jpg\",\n\t\t\"+domain\": \"pomelo.app.link\",\n\t\t\"$fallback_url\": \"https://www.pomelofashion.com/\",\n\t\t\"gclid\": [\"Cj0KCQjwhtT1BRCiARIsAGlY51KWb4IXNFv9u8lpnNdcBC5UMQpcqpEe1mr_1DAQYzkhemMWjbU_FskaAtmEEALw_wcB\"],\n\t\t\"+url\": \"https://pomelo.app.link/8ETJgUUXo5?%243p=a_google_adwords&%24always_deeplink=false&gclid=Cj0KCQjw-r71BRDuARIsAB7i_QOKtwN4HJdoXEnewHB7vEvGgYd_fSZUf_TN5lMUCjLh0jBrhAB7JNYaAtKVEALw_wcB&%24fallback_url=https%3A%2F%2Fwww.pomelofashion.com%2F&%7Ead_set_id=78891668804&%7Ecampaign_id=6454145704&%7Echannel=u&%7Ecampaign=TH_NEW_WEB_GG_ALL_SMS&gclid=Cj0KCQjw-r71BRDuARIsAB7i_QOKtwN4HJdoXEnewHB7vEvGgYd_fSZUf_TN5lMUCjLh0jBrhAB7JNYaAtKVEALw_wcB\",\n\t\t\"$desktop_url\": \"https://www.pomelofashion.com/\",\n\t\t\"$ios_deeplink_path\": \"deeplink\",\n\t\t\"$android_deeplink_path\": \"deeplink\",\n\t\t\"+device_os\": \"MAC_OS\",\n\t\t\"$link_title\": \"Google Smart Shopping\",\n\t\t\"+geo_country_code\": \"TH\",\n\t\t\"$one_time_use\": false,\n\t\t\"$canonical_url\": \"https://www.pomelofashion.com/\",\n\t\t\"id\": \"0\",\n\t\t\"page\": \"home\",\n\t\t\"$always_deeplink\": \"false\",\n\t\t\"+via_features\": [\"ADS\"]\n\t},\n\t\"timestamp\": 1589450204000,\n\t\"last_attributed_touch_type\": \"CLICK\",\n\t\"attributed\": \"true\",\n\t\"install_activity\": {\n\t\t\"data\": {\n\t\t\t\"country_code\": \"SG\"\n\t\t},\n\t\t\"event_name\": \"INSTALL\",\n\t\t\"attributed\": false,\n\t\t\"timestamp\": 1588577347000\n\t},\n\t\"seconds_from_install_to_event\": 74882,\n\t\"user_data\": {\n\t\t\"os\": \"IOS\",\n\t\t\"os_version\": \"13.4\",\n\t\t\"environment\": \"FULL_APP\",\n\t\t\"platform\": \"IOS_APP\",\n\t\t\"idfv\": \"6284ABC8-332A-41F5-BB3A-CBC0C765E864\",\n\t\t\"limit_ad_tracking\": false,\n\t\t\"ip\": \"202.133.218.136\",\n\t\t\"developer_identity\": \"michael-gaylord\",\n\t\t\"language\": \"EN\",\n\t\t\"app_version\": \"1.0\",\n\t\t\"brand\": \"Apple\",\n\t\t\"model\": \"x86_64\",\n\t\t\"screen_width\": 414,\n\t\t\"screen_height\": 896,\n\t\t\"geo_dma_code\": 0,\n\t\t\"geo_city_code\": 1880252,\n\t\t\"geo_city_en\": \"Singapore\",\n\t\t\"geo_lat\": 1.3248,\n\t\t\"geo_lon\": 103.8566,\n\t\t\"geo_country_code\": \"SG\",\n\t\t\"past_cross_platform_ids\": [],\n\t\t\"prob_cross_platform_ids\": [],\n\t\t\"is_jailbroken\": null,\n\t\t\"disable_ad_network_callouts\": false\n\t},\n\t\"first_event_for_user\": \"false\",\n\t\"name\": \"PURCHASE\",\n\t\"last_attributed_touch_timestamp\": 1588650243000,\n\t\"existing_user\": \"false\",\n\t\"custom_data\": {\n\t\t\"country\": \"SG\",\n\t\t\"anonymous_id\": \"C9D3F0D7-65B5-418B-849C-2821BCD66BE3\",\n\t\t\"channel\": \"server\",\n\t\t\"category\": \"Stylekorean\",\n\t\t\"write_key\": \"T5hQssj6CdpmoRili8zxZ1m0QNYUpM1P\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/dev/send?client_id=269393164682-0quvhi75thmv53r3p5k9q3qkdthhrktv.apps.googleusercontent.com&client_secret=LGparNVfIrOL8oy1PiDLPh9i&developer_token=M7jStG8wZAfOw1-QjWcNbw&customer_account_id=303-894-6739&login_customer_id=340-435-7870&refresh_token=1//0gUsmUgE0b_wqCgYIARAAGBASNwF-L9IrUP14mXZERcyeiQXIOKN7bPkE8g-fVYCZKn7QcwHR0V0tkrO2Oc_7ANCVrRwN4NAi0uE&validate_only=true",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dev",
+								"send"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "269393164682-0quvhi75thmv53r3p5k9q3qkdthhrktv.apps.googleusercontent.com"
+								},
+								{
+									"key": "client_secret",
+									"value": "LGparNVfIrOL8oy1PiDLPh9i"
+								},
+								{
+									"key": "developer_token",
+									"value": "M7jStG8wZAfOw1-QjWcNbw"
+								},
+								{
+									"key": "customer_account_id",
+									"value": "303-894-6739"
+								},
+								{
+									"key": "login_customer_id",
+									"value": "340-435-7870"
+								},
+								{
+									"key": "refresh_token",
+									"value": "1//0gUsmUgE0b_wqCgYIARAAGBASNwF-L9IrUP14mXZERcyeiQXIOKN7bPkE8g-fVYCZKn7QcwHR0V0tkrO2Oc_7ANCVrRwN4NAi0uE"
+								},
+								{
+									"key": "validate_only",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send Remote",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"deep_linked\": \"false\",\n\t\"origin\": \"SEGMENT\",\n\t\"event_data\": {\n\t\t\"transaction_id\": \"B730BFBA-76A9-4199-AA95-92F323203D0A\",\n\t\t\"currency\": \"MYR\",\n\t\t\"revenue\": 1234.56,\n\t\t\"revenue_in_usd\": 286.00949843623306,\n\t\t\"exchange_rate\": 4.3165,\n\t\t\"shipping\": 0.0,\n\t\t\"tax\": 0.0\n\t},\n\t\"event_timestamp\": 1589450204000,\n\t\"days_from_last_attributed_touch_to_event\": 0,\n\t\"content_items\": [{\n\t\t\"$publicly_indexable\": false,\n\t\t\"$locally_indexable\": false,\n\t\t\"$exp_date\": 0,\n\t\t\"$canonical_url\": \"https://giphy.com/gifs/tequila-was-a-bad-choice-minus-the-black-eye-i-guess-literally-me-this-morning-Wmjvx4XQ8OJWg\",\n\t\t\"$og_image_url\": \"\",\n\t\t\"$price\": 701.0,\n\t\t\"$quantity\": 1.0,\n\t\t\"$sku\": \"sku_Wmjvx4XQ8OJWg\",\n\t\t\"$product_name\": \"ralph macchio literally me this morning GIF\",\n\t\t\"$rating_average\": 0.0,\n\t\t\"$rating_max\": 0.0,\n\t\t\"$latitude\": 0.0,\n\t\t\"$longitude\": 0.0,\n\t\t\"$creation_timestamp\": 0\n\t}],\n\t\"id\": \"6BA779C2-3964-4419-AA50-A601E1F76DC1\",\n\t\"last_attributed_touch_data\": {\n\t\t\"$3p\": \"a_google_adwords\",\n\t\t\"~ad_set_id\": \"78891668804\",\n\t\t\"~feature\": \"paid advertising\",\n\t\t\"~campaign_id\": \"6454145704\",\n\t\t\"~advertising_partner_id\": \"5\",\n\t\t\"~campaign\": \"TH_NEW_WEB_GG_ALL_SMS\",\n\t\t\"~channel\": \"Google AdWords\",\n\t\t\"+user_data_user_agent\": \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Mobile/15E148 Safari/604.1\",\n\t\t\"~tune_publisher_name\": \"Google AdWords\",\n\t\t\"+touch_id\": \"786016036936492524\",\n\t\t\"~advertising_partner_name\": \"Google AdWords\",\n\t\t\"+user_data_ip\": \"2001:fb1:37:4969:ec86:210b:3db8:6285\",\n\t\t\"~branch_ad_format\": \"Cross-Platform Search\",\n\t\t\"$android_passive_deepview\": false,\n\t\t\"$og_title\": \"POMELO Fashion | Get all the latest fashion, updated twice every week! - Pomelo\",\n\t\t\"$deeplink_path\": \"deeplink\",\n\t\t\"+device_os_version\": \"10.15\",\n\t\t\"$og_description\": \"Shop the latest fashion at POMELO fashion. Designed and manufactured in house for quality and style. Dresses, tops, knits, jackets, denim, accessories and more!\",\n\t\t\"+click_timestamp\": 1588639053,\n\t\t\"$ios_passive_deepview\": false,\n\t\t\"$og_image_url\": \"https://pomelofashion.imgix.net/img/pomelo-logo-square.jpg\",\n\t\t\"+domain\": \"pomelo.app.link\",\n\t\t\"$fallback_url\": \"https://www.pomelofashion.com/\",\n\t\t\"gclid\": [\"Cj0KCQjwhtT1BRCiARIsAGlY51KWb4IXNFv9u8lpnNdcBC5UMQpcqpEe1mr_1DAQYzkhemMWjbU_FskaAtmEEALw_wcB\"],\n\t\t\"+url\": \"https://pomelo.app.link/8ETJgUUXo5?%243p=a_google_adwords&%24always_deeplink=false&gclid=Cj0KCQjw-r71BRDuARIsAB7i_QOKtwN4HJdoXEnewHB7vEvGgYd_fSZUf_TN5lMUCjLh0jBrhAB7JNYaAtKVEALw_wcB&%24fallback_url=https%3A%2F%2Fwww.pomelofashion.com%2F&%7Ead_set_id=78891668804&%7Ecampaign_id=6454145704&%7Echannel=u&%7Ecampaign=TH_NEW_WEB_GG_ALL_SMS&gclid=Cj0KCQjw-r71BRDuARIsAB7i_QOKtwN4HJdoXEnewHB7vEvGgYd_fSZUf_TN5lMUCjLh0jBrhAB7JNYaAtKVEALw_wcB\",\n\t\t\"$desktop_url\": \"https://www.pomelofashion.com/\",\n\t\t\"$ios_deeplink_path\": \"deeplink\",\n\t\t\"$android_deeplink_path\": \"deeplink\",\n\t\t\"+device_os\": \"MAC_OS\",\n\t\t\"$link_title\": \"Google Smart Shopping\",\n\t\t\"+geo_country_code\": \"TH\",\n\t\t\"$one_time_use\": false,\n\t\t\"$canonical_url\": \"https://www.pomelofashion.com/\",\n\t\t\"id\": \"0\",\n\t\t\"page\": \"home\",\n\t\t\"$always_deeplink\": \"false\",\n\t\t\"+via_features\": [\"ADS\"]\n\t},\n\t\"timestamp\": 1589450204000,\n\t\"last_attributed_touch_type\": \"CLICK\",\n\t\"attributed\": \"true\",\n\t\"install_activity\": {\n\t\t\"data\": {\n\t\t\t\"country_code\": \"SG\"\n\t\t},\n\t\t\"event_name\": \"INSTALL\",\n\t\t\"attributed\": false,\n\t\t\"timestamp\": 1588577347000\n\t},\n\t\"seconds_from_install_to_event\": 74882,\n\t\"user_data\": {\n\t\t\"os\": \"IOS\",\n\t\t\"os_version\": \"13.4\",\n\t\t\"environment\": \"FULL_APP\",\n\t\t\"platform\": \"IOS_APP\",\n\t\t\"idfv\": \"6284ABC8-332A-41F5-BB3A-CBC0C765E864\",\n\t\t\"limit_ad_tracking\": false,\n\t\t\"ip\": \"202.133.218.136\",\n\t\t\"developer_identity\": \"michael-gaylord\",\n\t\t\"language\": \"EN\",\n\t\t\"app_version\": \"1.0\",\n\t\t\"brand\": \"Apple\",\n\t\t\"model\": \"x86_64\",\n\t\t\"screen_width\": 414,\n\t\t\"screen_height\": 896,\n\t\t\"geo_dma_code\": 0,\n\t\t\"geo_city_code\": 1880252,\n\t\t\"geo_city_en\": \"Singapore\",\n\t\t\"geo_lat\": 1.3248,\n\t\t\"geo_lon\": 103.8566,\n\t\t\"geo_country_code\": \"SG\",\n\t\t\"past_cross_platform_ids\": [],\n\t\t\"prob_cross_platform_ids\": [],\n\t\t\"is_jailbroken\": null,\n\t\t\"disable_ad_network_callouts\": false\n\t},\n\t\"first_event_for_user\": \"false\",\n\t\"name\": \"PURCHASE\",\n\t\"last_attributed_touch_timestamp\": 1588650243000,\n\t\"existing_user\": \"false\",\n\t\"custom_data\": {\n\t\t\"country\": \"SG\",\n\t\t\"anonymous_id\": \"C9D3F0D7-65B5-418B-849C-2821BCD66BE3\",\n\t\t\"channel\": \"server\",\n\t\t\"category\": \"Stylekorean\",\n\t\t\"write_key\": \"T5hQssj6CdpmoRili8zxZ1m0QNYUpM1P\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "https://vohp6cdtb7.execute-api.us-east-1.amazonaws.com/dev/send?client_id=269393164682-0quvhi75thmv53r3p5k9q3qkdthhrktv.apps.googleusercontent.com&client_secret=LGparNVfIrOL8oy1PiDLPh9i&developer_token=M7jStG8wZAfOw1-QjWcNbw&customer_account_id=303-894-6739&login_customer_id=340-435-7870&refresh_token=1//0gUsmUgE0b_wqCgYIARAAGBASNwF-L9IrUP14mXZERcyeiQXIOKN7bPkE8g-fVYCZKn7QcwHR0V0tkrO2Oc_7ANCVrRwN4NAi0uE&validate_only=true",
+							"protocol": "https",
+							"host": [
+								"vohp6cdtb7",
+								"execute-api",
+								"us-east-1",
+								"amazonaws",
+								"com"
+							],
+							"path": [
+								"dev",
+								"send"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "269393164682-0quvhi75thmv53r3p5k9q3qkdthhrktv.apps.googleusercontent.com"
+								},
+								{
+									"key": "client_secret",
+									"value": "LGparNVfIrOL8oy1PiDLPh9i"
+								},
+								{
+									"key": "developer_token",
+									"value": "M7jStG8wZAfOw1-QjWcNbw"
+								},
+								{
+									"key": "customer_account_id",
+									"value": "303-894-6739"
+								},
+								{
+									"key": "login_customer_id",
+									"value": "340-435-7870"
+								},
+								{
+									"key": "refresh_token",
+									"value": "1//0gUsmUgE0b_wqCgYIARAAGBASNwF-L9IrUP14mXZERcyeiQXIOKN7bPkE8g-fVYCZKn7QcwHR0V0tkrO2Oc_7ANCVrRwN4NAi0uE"
+								},
+								{
+									"key": "validate_only",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "mParticle API",
+			"item": [
+				{
+					"name": "mParticle HTTP API",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXMxLWQzNWNkOGE1MjczMWU0NDRhNDM5ZTZhYzAyMTkyYWUyOk42TUllVERfVDlFOFl3ZnFZb0d2dkhoYkU4MUQ1TTRLZGg2X29ZZ3d2cEp2VGdlYWhWN3plM0hFTndJUTA2cjk="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\" :\n\t{\n\t\t\"event_name\" : \"click\",\n\t\t\"custom_event_type\" : \"navigation\",\n\t\t\"event_id\" : 6325455899117515000,\n\t\t\"source_message_id\" : \"c0c67567-99c0-4fa9-9ca5-a3b22fe5e2c1\",\n\t\t\"session_id\" : 7093443196499720000,\n\t\t\"session_uuid\" : \"f2772ba4-e34a-411e-88fb-cee77909bee2\",\n\t\t\"timestamp_unixtime_ms\" : 1598848434,\n\t\t\"location\" : {},\n\t\t\"device_current_state\" : {},\n\t\t\"custom_attributes\": {\n\t\t\t\"button_name\":  \"home\",\n\t\t\t\"other_attribute\":  \"xyz\"\n\t\t}\n\t},\n\t\"event_type\" : \"custom_event\"\n}"
+						},
+						"url": {
+							"raw": "https://s2s.mparticle.com/v2/events",
+							"protocol": "https",
+							"host": [
+								"s2s",
+								"mparticle",
+								"com"
+							],
+							"path": [
+								"v2",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mParticle HTTP FireTV Event",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXMxLWFmZGQ4ZmNkOTMzN2M4NDNhNDJjNmI1YTdkODU5MzIwOjRXSDVJOURBMFBLY0NvcWl0X0ZSYlJkelpFM2R2Qi1IamxvY19VRXdoZURoVm5PTkR0M1lncmFycFBwS3RNRDQ="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"source_request_id\": \"46cf7515-fd85-450f-8b00-2390706fa06c\",\n  \"events\": [\n    {\n      \"data\": {\n        \"timestamp_unixtime_ms\": \"1598848434\",\n        \"event_id\": 6276963039534166000,\n        \"source_message_id\": \"831836A1-6D43-4228-9D31-F6A53392CB7A\",\n        \"session_id\": \"-3320879803875777052\",\n        \"session_uuid\": \"831836A1-6D43-4228-9D31-F6A53392CB7A\",\n        \"session_start_unixtime_ms\": \"1598848434\",\n        \"event_start_unixtime_ms\": \"1598848434\",\n        \"custom_attributes\": null,\n        \"device_current_state\": {\n          \"time_since_start_ms\": \"2048\",\n          \"battery_level\": 1,\n          \"data_connection_type\": \"wifi\",\n          \"data_connection_type_detail\": null,\n          \"gps_state\": false,\n          \"total_system_memory_usage_bytes\": \"916660224\",\n          \"disk_space_free_bytes\": \"2232905728\",\n          \"external_disk_space_free_bytes\": \"2232905728\",\n          \"cpu\": null,\n          \"system_memory_available_bytes\": 359972864,\n          \"system_memory_low\": false,\n          \"system_memory_threshold_bytes\": 174899200,\n          \"application_memory_available_bytes\": 929044,\n          \"application_memory_max_bytes\": 268435456,\n          \"application_memory_total_bytes\": 10934160,\n          \"device_orientation\": \"landscape\",\n          \"status_bar_orientation\": \"unknown\"\n        },\n        \"is_goal_defined\": false,\n        \"lifetime_value_change\": 0,\n        \"lifetime_value_attribute_name\": null,\n        \"data_connection_type\": null,\n        \"event_num\": 0,\n        \"view_controller\": null,\n        \"is_main_thread\": null,\n        \"canonical_name\": null,\n        \"event_system_notification_info\": null\n      },\n      \"event_type\": \"session_start\"\n    }\n  ],\n  \"device_info\": {\n    \"brand\": \"Amazon\",\n    \"product\": \"full_tank\",\n    \"device\": \"tank\",\n    \"android_uuid\": null,\n    \"device_manufacturer\": \"Amazon\",\n    \"platform\": \"Android\",\n    \"os_version\": \"22\",\n    \"device_model\": \"AFTT\",\n    \"screen_height\": 1080,\n    \"screen_width\": 1920,\n    \"screen_dpi\": 320,\n    \"device_country\": \"United States\",\n    \"locale_language\": \"en\",\n    \"locale_country\": \"US\",\n    \"network_country\": null,\n    \"network_carrier\": null,\n    \"network_code\": null,\n    \"network_mobile_country_code\": null,\n    \"timezone_offset\": -5,\n    \"build_identifier\": \"LVY48F\",\n    \"http_header_user_agent\": \"mParticle Android SDK/5.12.5\",\n    \"ios_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"push_token\": null,\n    \"cpu_architecture\": null,\n    \"is_tablet\": true,\n    \"push_notification_sound_enabled\": false,\n    \"push_notification_vibrate_enabled\": false,\n    \"radio_access_technology\": null,\n    \"supports_telephony\": false,\n    \"has_nfc\": false,\n    \"bluetooth_enabled\": false,\n    \"bluetooth_version\": \"ble\",\n    \"ios_idfv\": \"00000000-0000-0000-0000-000000000000\",\n    \"android_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"build_version_release\": \"5.1.1\",\n    \"limit_ad_tracking\": null,\n    \"amp_id\": null,\n    \"is_dst\": false,\n    \"roku_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"roku_publisher_id\": null,\n    \"microsoft_advertising_id\": null,\n    \"microsoft_publisher_id\": null,\n    \"fire_advertising_id\": \"8b0c786f-497c-41d3-ad35-7f62a3b07fa3\"\n  },\n  \"application_info\": {\n    \"application_name\": \"TBS\",\n    \"application_version\": \"5.9.0\",\n    \"application_build_number\": \"1910008404\",\n    \"install_referrer\": null,\n    \"package\": \"com.turner.tbs.android.networkapp\",\n    \"os\": \"FireTV\",\n    \"apple_search_ads_attributes\": null\n  },\n  \"user_attributes\": {\n    \"Series 322296 Play Count\": \"1\",\n    \"Series 2184415 Play Count\": \"4\",\n    \"MVPD\": \"AT&T U-verse  \",\n    \"MVPD ID\": \"ATT\",\n    \"Series 581006 Play Count\": \"1\",\n    \"Series 440990 Play Count\": \"22\",\n    \"Series 2133085 Play Count\": \"1\",\n    \"Series 434632 Play Count\": \"1\",\n    \"Series 2003422 Play Count\": \"1\",\n    \"Series 725092 Play Count\": \"1\",\n    \"Series 2045710 Play Count\": \"11\",\n    \"Series 861915 Play Count\": \"4\",\n    \"Series 803139 Play Count\": \"1\",\n    \"Series 2184043 Play Count\": \"1\",\n    \"Series movies Play Count\": \"4\",\n    \"Series 100025 Play Count\": \"4\",\n    \"Series 2143103 Play Count\": \"1\",\n    \"Series 2061452 Play Count\": \"1\",\n    \"Series 332142 Play Count\": \"2\",\n    \"Series 329644 Play Count\": \"2\",\n    \"Series 697063 Play Count\": \"1\"\n  },\n  \"deleted_user_attributes\": null,\n  \"user_identities\": {\n    \"other\": \"f904001a-faa4-6519-c534-a18c09c7f654\"\n  },\n  \"environment\": \"development\",\n  \"ip\": \"4.15.78.133\",\n  \"integration_attributes\": null,\n  \"source_info\": {\n    \"channel\": \"native\",\n    \"partner\": null,\n    \"replay_request_id\": null,\n    \"replay_job_id\": null,\n    \"is_historical\": false\n  },\n  \"mp_deviceid\": \"4ce325be-dff1-45a1-9cca-e6131f33e66e\",\n  \"attribution_info\": null,\n  \"timestamp_unixtime_ms\": \"1598848434\",\n  \"batch_id\": \"843255430087447200\",\n  \"mpid\": 5795723057352007000,\n  \"sdk_version\": \"5.12.5\"\n}"
+						},
+						"url": {
+							"raw": "https://s2s.mparticle.com/v2/events",
+							"protocol": "https",
+							"host": [
+								"s2s",
+								"mparticle",
+								"com"
+							],
+							"path": [
+								"v2",
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mParticle HTTP TCM FireTV Event",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXMxLWFmZGQ4ZmNkOTMzN2M4NDNhNDJjNmI1YTdkODU5MzIwOjRXSDVJOURBMFBLY0NvcWl0X0ZSYlJkelpFM2R2Qi1IamxvY19VRXdoZURoVm5PTkR0M1lncmFycFBwS3RNRDQ="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"source_request_id\": \"89ecc333-d322-4196-8480-0ee2db608bc6\",\n  \"events\": [{\n    \"data\": {\n      \"timestamp_unixtime_ms\": \"1598848434\",\n      \"event_id\": \"4411992639070377000\",\n      \"source_message_id\": \"E49C6D5F-BD76-42E8-A48D-19ABECC0F1D3\",\n      \"session_id\": \"-2053236112697050000\",\n      \"session_uuid\": \"E593A388-057C-42B5-AA71-367CF148494A\",\n      \"session_start_unixtime_ms\": \"1598848434\",\n      \"event_start_unixtime_ms\": \"1598848434\",\n      \"custom_attributes\": null,\n      \"device_current_state\": {\n        \"time_since_start_ms\": \"2048\",\n        \"battery_level\": 1,\n        \"data_connection_type\": \"wifi\",\n        \"data_connection_type_detail\": null,\n        \"gps_state\": false,\n        \"total_system_memory_usage_bytes\": \"916660224\",\n        \"disk_space_free_bytes\": \"2232905728\",\n        \"external_disk_space_free_bytes\": \"2232905728\",\n        \"cpu\": null,\n        \"system_memory_available_bytes\": 359972864,\n        \"system_memory_low\": false,\n        \"system_memory_threshold_bytes\": 174899200,\n        \"application_memory_available_bytes\": 929044,\n        \"application_memory_max_bytes\": 268435456,\n        \"application_memory_total_bytes\": 10934160,\n        \"device_orientation\": \"landscape\",\n        \"status_bar_orientation\": \"unknown\"\n      },\n      \"is_goal_defined\": false,\n      \"lifetime_value_change\": 0,\n      \"lifetime_value_attribute_name\": null,\n      \"data_connection_type\": null,\n      \"event_num\": 0,\n      \"view_controller\": null,\n      \"is_main_thread\": null,\n      \"canonical_name\": null,\n      \"event_system_notification_info\": null\n    },\n    \"event_type\": \"session_start\"\n  }, {\n    \"data\": {\n      \"successfully_closed\": false,\n      \"is_first_run\": false,\n      \"is_upgrade\": false,\n      \"push_notification_payload\": null,\n      \"launch_referral\": null,\n      \"application_transition_type\": \"application_initialized\",\n      \"timestamp_unixtime_ms\": \"1598848436\",\n      \"event_id\": \"-7250937170581892000\",\n      \"source_message_id\": \"cddbc541-611f-4b87-be28-33ea879689d3\",\n      \"session_id\": \"-2181865083752200000\",\n      \"session_uuid\": \"7734470D-939F-4E0B-8853-1F340337EC0A\",\n      \"session_start_unixtime_ms\": \"1598848434\",\n      \"event_start_unixtime_ms\": \"0\",\n      \"custom_attributes\": null,\n      \"device_current_state\": {\n        \"time_since_start_ms\": \"3379\",\n        \"battery_level\": 1,\n        \"data_connection_type\": \"wifi\",\n        \"data_connection_type_detail\": null,\n        \"gps_state\": false,\n        \"total_system_memory_usage_bytes\": \"916660224\",\n        \"disk_space_free_bytes\": \"2232872960\",\n        \"external_disk_space_free_bytes\": \"2232872960\",\n        \"cpu\": null,\n        \"system_memory_available_bytes\": 347095040,\n        \"system_memory_low\": false,\n        \"system_memory_threshold_bytes\": 174899200,\n        \"application_memory_available_bytes\": 3766260,\n        \"application_memory_max_bytes\": 268435456,\n        \"application_memory_total_bytes\": 13603528,\n        \"device_orientation\": \"landscape\",\n        \"status_bar_orientation\": \"unknown\"\n      },\n      \"is_goal_defined\": false,\n      \"lifetime_value_change\": 0,\n      \"lifetime_value_attribute_name\": null,\n      \"data_connection_type\": null,\n      \"event_num\": 0,\n      \"view_controller\": null,\n      \"is_main_thread\": null,\n      \"canonical_name\": \"com.turner.tbs.android.networkapp.MainActivity\",\n      \"event_system_notification_info\": null\n    },\n    \"event_type\": \"application_state_transition\"\n  }],\n  \"device_info\": {\n    \"brand\": \"Amazon\",\n    \"product\": \"full_tank\",\n    \"device\": \"tank\",\n    \"android_uuid\": null,\n    \"device_manufacturer\": \"Amazon\",\n    \"platform\": \"Android\",\n    \"os_version\": \"22\",\n    \"device_model\": \"AFTT\",\n    \"screen_height\": 1080,\n    \"screen_width\": 1920,\n    \"screen_dpi\": 320,\n    \"device_country\": \"United States\",\n    \"locale_language\": \"en\",\n    \"locale_country\": \"US\",\n    \"network_country\": null,\n    \"network_carrier\": null,\n    \"network_code\": null,\n    \"network_mobile_country_code\": null,\n    \"timezone_offset\": -5,\n    \"build_identifier\": \"LVY48F\",\n    \"http_header_user_agent\": \"mParticle Android SDK/5.12.5\",\n    \"ios_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"push_token\": null,\n    \"cpu_architecture\": null,\n    \"is_tablet\": true,\n    \"push_notification_sound_enabled\": false,\n    \"push_notification_vibrate_enabled\": false,\n    \"radio_access_technology\": null,\n    \"supports_telephony\": false,\n    \"has_nfc\": false,\n    \"bluetooth_enabled\": false,\n    \"bluetooth_version\": \"ble\",\n    \"ios_idfv\": \"00000000-0000-0000-0000-000000000000\",\n    \"android_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"build_version_release\": \"5.1.1\",\n    \"limit_ad_tracking\": null,\n    \"amp_id\": null,\n    \"is_dst\": false,\n    \"roku_advertising_id\": \"00000000-0000-0000-0000-000000000000\",\n    \"roku_publisher_id\": null,\n    \"microsoft_advertising_id\": null,\n    \"microsoft_publisher_id\": null,\n    \"fire_advertising_id\": \"00000000-0000-0000-0000-000000000000\"\n  },\n  \"application_info\": {\n    \"application_name\": \"TBS\",\n    \"application_version\": \"5.9.0\",\n    \"application_build_number\": \"1910008404\",\n    \"install_referrer\": null,\n    \"package\": \"com.turner.tbs.android.networkapp\",\n    \"os\": \"FireTV\",\n    \"apple_search_ads_attributes\": null\n  },\n  \"user_attributes\": {\n    \"Series 322296 Play Count\": \"1\",\n    \"Series 2184415 Play Count\": \"4\",\n    \"MVPD\": \"AT&T U-verse  \",\n    \"MVPD ID\": \"ATT\",\n    \"Series 581006 Play Count\": \"1\",\n    \"Series 440990 Play Count\": \"22\",\n    \"Series 2133085 Play Count\": \"1\",\n    \"Series 434632 Play Count\": \"1\",\n    \"Series 2003422 Play Count\": \"1\",\n    \"Series 725092 Play Count\": \"1\",\n    \"Series 2045710 Play Count\": \"11\",\n    \"Series 861915 Play Count\": \"4\",\n    \"Series 803139 Play Count\": \"1\",\n    \"Series 2184043 Play Count\": \"1\",\n    \"Series movies Play Count\": \"4\",\n    \"Series 100025 Play Count\": \"4\",\n    \"Series 2143103 Play Count\": \"1\",\n    \"Series 2061452 Play Count\": \"1\",\n    \"Series 332142 Play Count\": \"2\",\n    \"Series 329644 Play Count\": \"2\",\n    \"Series 697063 Play Count\": \"1\"\n  },\n  \"deleted_user_attributes\": null,\n  \"user_identities\": {\n    \"other\": \"3ed46fed-c824-44e9-b28c-0cd2c1f62be3\"\n  },\n  \"environment\": \"development\",\n  \"ip\": \"202.133.218.229\",\n  \"integration_attributes\": null,\n  \"source_info\": {\n    \"channel\": \"native\",\n    \"partner\": null,\n    \"replay_request_id\": null,\n    \"replay_job_id\": null,\n    \"is_historical\": false\n  },\n  \"mp_deviceid\": \"ab1e2515-81a7-4668-afbb-c9b863ab4d37\",\n  \"attribution_info\": null,\n  \"timestamp_unixtime_ms\": \"1598848435\",\n  \"batch_id\": \"499268929613754200\",\n  \"mpid\": \"394219660339877000\",\n  \"sdk_version\": \"5.12.5\",\n  \"ccpa\": null\n  }\n}\n"
+						},
+						"url": {
+							"raw": "https://s2s.mparticle.com/v2/events",
+							"protocol": "https",
+							"host": [
+								"s2s",
+								"mparticle",
+								"com"
+							],
+							"path": [
+								"v2",
+								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Link Validator",
+			"item": [
+				{
+					"name": "Tokopedia Product Link Regex",
+					"protocolProfileBehavior": {
+						"followRedirects": false,
+						"followOriginalHttpMethod": false,
+						"followAuthorizationHeader": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"urls\":[\"https://tokopedia.app.link/?~campaign=1234567\"],\"branchKey\":\"key_live_abhHgIh1DQiuPxdBNg9EXepdDugwwkHr\",\"template\":\"TOKOPEDIA_PRODUCT_LINK\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/validate/precanned",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"validate",
+								"precanned"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request (11)",
+			"protocolProfileBehavior": {
+				"followRedirects": false,
+				"followOriginalHttpMethod": false,
+				"followAuthorizationHeader": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://prf.hn/click/camref:1100lebyg/adref:0w8tDUDlfZx_/pubref:dwukw7ymTlilQhFEZJTR3g.DM3vPxWNBW6FMndn_iQ-Xw?$3p=a_partnerize&$affiliate_url=https://prf.hn/click/camref:1100lebyg/adref:0w8tDUDlfZx_/pubref:gGY6xvrfRyi14ZuiRRu1gA.iMW4ugjCB5iC8gl3-yM-Xw&$desktop_url=https://www.pomelofashion.com/&~secondary_publisher=0w8tDUDlfZx_&~click_id=gGY6xvrfRyi14ZuiRRu1gA.iMW4ugjCB5iC8gl3-yM-Xw&$aaid=84abec12-c088-4422-b20a-f7d574ed55a3",
+					"protocol": "https",
+					"host": [
+						"prf",
+						"hn"
+					],
+					"path": [
+						"click",
+						"camref:1100lebyg",
+						"adref:0w8tDUDlfZx_",
+						"pubref:dwukw7ymTlilQhFEZJTR3g.DM3vPxWNBW6FMndn_iQ-Xw"
+					],
+					"query": [
+						{
+							"key": "$3p",
+							"value": "a_partnerize"
+						},
+						{
+							"key": "$affiliate_url",
+							"value": "https://prf.hn/click/camref:1100lebyg/adref:0w8tDUDlfZx_/pubref:gGY6xvrfRyi14ZuiRRu1gA.iMW4ugjCB5iC8gl3-yM-Xw"
+						},
+						{
+							"key": "$desktop_url",
+							"value": "https://www.pomelofashion.com/"
+						},
+						{
+							"key": "~secondary_publisher",
+							"value": "0w8tDUDlfZx_"
+						},
+						{
+							"key": "~click_id",
+							"value": "gGY6xvrfRyi14ZuiRRu1gA.iMW4ugjCB5iC8gl3-yM-Xw"
+						},
+						{
+							"key": "$aaid",
+							"value": "84abec12-c088-4422-b20a-f7d574ed55a3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
